@@ -72,7 +72,16 @@
       fig.replaceChild(ph, img);
     };
     fig.appendChild(img);
-    fig.appendChild(el("figcaption", { text: L(item.caption) }));
+
+    var cap = el("figcaption", {}, [el("strong", { text: L(item.caption) })]);
+    if (item.desc) cap.appendChild(el("span", { class: "ph-desc", text: L(item.desc) }));
+    if (item.link)
+      cap.appendChild(
+        el("a", { class: "ph-link", href: item.link, target: "_blank", rel: "noopener" }, [
+          t("website") + " ↗",
+        ])
+      );
+    fig.appendChild(cap);
     return fig;
   }
 
@@ -212,6 +221,19 @@
 
     wrap.appendChild(mapsButton(s));
 
+    // extra reference links (e.g. campus map)
+    if (s.links && s.links.length) {
+      var linkRow = el("div", { class: "link-row" });
+      s.links.forEach(function (lk) {
+        linkRow.appendChild(
+          el("a", { class: "btn btn-link", href: lk.url, target: "_blank", rel: "noopener" }, [
+            "🔗 " + L(lk.label),
+          ])
+        );
+      });
+      wrap.appendChild(linkRow);
+    }
+
     // facts
     var facts = el("div", { class: "facts" });
     if (s.walk) facts.appendChild(infoRow("🚶 " + t("walk"), L(s.walk)));
@@ -231,6 +253,14 @@
         el("section", { class: "block" }, [
           el("h3", { text: t("story") }),
           el("p", { text: L(s.story) }),
+        ])
+      );
+
+    if (s.tour)
+      wrap.appendChild(
+        el("section", { class: "panel tour" }, [
+          el("h3", { class: "panel-title", text: "🚶 " + t("tourTitle") }),
+          el("p", { text: L(s.tour) }),
         ])
       );
 

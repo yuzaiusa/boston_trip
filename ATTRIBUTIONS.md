@@ -26,8 +26,14 @@ All images below are from [Wikimedia Commons](https://commons.wikimedia.org) and
 | `northend-cannoli.jpg` | [Cannoli in a box.jpg](https://commons.wikimedia.org/wiki/File:Cannoli_in_a_box.jpg) | Quinn Dombrowski from Berkeley, USA | CC BY-SA 2.0 |
 | `northend-church.jpg` | [Old North Church spire.jpg](https://commons.wikimedia.org/wiki/File:Old_North_Church_spire.jpg) | Farragutful | CC BY-SA 4.0 |
 | `northend-revere.jpg` | [The Paul Revere House (926711833).jpg](https://commons.wikimedia.org/wiki/File:The_Paul_Revere_House_(926711833).jpg) | Rob Young from United Kingdom | CC BY 2.0 |
+| `yale-artgallery.jpg` | [Swartwout Building, Yale University Art Gallery ](https://commons.wikimedia.org/wiki/File:Swartwout_Building,_Yale_University_Art_Gallery_-_20120428.jpg) | Smuconlaw. | CC BY-SA 3.0 |
+| `yale-beinecke.jpg` | [20170420 Beinecke Rare Book Library Interior Yal](https://commons.wikimedia.org/wiki/File:20170420_Beinecke_Rare_Book_Library_Interior_Yale_University_New_Haven_Connecticut.jpg) | Michael Kastelic | CC BY-SA 4.0 |
+| `yale-britishart.jpg` | [View of the Yale Center for British Art and Univ](https://commons.wikimedia.org/wiki/File:View_of_the_Yale_Center_for_British_Art_and_University_Art_Gallery_from_the_Yale_School_of_Architecture,_2018.jpg) | RukshanV | CC BY-SA 4.0 |
 | `yale-library.jpg` | [Interior of Sterling Memorial Library - Yale Uni](https://commons.wikimedia.org/wiki/File:Interior_of_Sterling_Memorial_Library_-_Yale_University_-_New_Haven_-_CT_-_USA_-_02_(6942583186).jpg) | Adam Jones from Kelowna, BC, Canada | CC BY-SA 2.0 |
 | `yale-oldcampus.jpg` | [Old Yale University Campus.jpg](https://commons.wikimedia.org/wiki/File:Old_Yale_University_Campus.jpg) | See-ming Lee from Hong Kong SAR, China | CC BY-SA 2.0 |
+| `yale-peabody.jpg` | [Yale University's Peabody Museum of Natural Hist](https://commons.wikimedia.org/wiki/File:Yale_University%27s_Peabody_Museum_of_Natural_History_(New_Haven,_Connecticut,_USA).jpg) | James St. John | CC BY 2.0 |
 | `yale-pizza.jpg` | [Frank Pepe Pizzeria Napoletana (54106004336).jpg](https://commons.wikimedia.org/wiki/File:Frank_Pepe_Pizzeria_Napoletana_(54106004336).jpg) | ajay_suresh | CC BY 2.0 |
+| `yale-schwarzman.jpg` | [The Rotunda at Yale's Schwarzman Center.jpg](https://commons.wikimedia.org/wiki/File:The_Rotunda_at_Yale%27s_Schwarzman_Center.jpg) | Kenneth C. Zirkel | CC BY-SA 4.0 |
+| `yale-visitorcenter.jpg` | [Yale University - Outside Phelps Gate - New Have](https://commons.wikimedia.org/wiki/File:Yale_University_-_Outside_Phelps_Gate_-_New_Haven_-_CT_-_USA_(7093118031).jpg) | Adam Jones from Kelowna, BC, Canada | CC BY-SA 2.0 |
 
 _If you replace any image with your own photo (same filename in `assets/img/`), you can remove its row here._
