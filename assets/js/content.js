@@ -542,10 +542,23 @@ const TRIP = {
       },
       coords: [42.3541, -71.0699],
       mapQuery: "Swan Boats Boston Public Garden",
+      links: [
+        { label: { en: "Swan Boats info & hours", zh: "天鹅船信息与时间" }, url: "https://swanboats.com/" },
+        { label: { en: "About the Public Garden", zh: "公共花园介绍" }, url: "https://friendsofthepublicgarden.org/" },
+      ],
       mustSee: [
-        { emoji: "🦢", img: "garden-swanboat.jpg", caption: { en: "Ride a gentle Swan Boat on the lagoon", zh: "在湖上乘坐悠然的天鹅船" } },
-        { emoji: "🦆", img: "garden-ducklings.jpg", caption: { en: "'Make Way for Ducklings' bronze statues", zh: "《让路给小鸭子》青铜雕塑" } },
-        { emoji: "🌷", img: "garden-flowers.jpg", caption: { en: "Victorian flower beds & weeping willows", zh: "维多利亚式花圃与垂柳" } },
+        { emoji: "🦢", img: "garden-swanboat.jpg", link: "https://swanboats.com/",
+          caption: { en: "1. Ride a Swan Boat", zh: "1. 乘坐天鹅船" },
+          desc: { en: "A calm, 15-minute foot-pedaled ride around the lagoon, running since 1877. Seniors about $4.25; buy at the dock, staff help you board.", zh: "环湖一圈、约15分钟的脚踏船，宁静悠然，自1877年运营至今。长者约$4.25，码头现场购票，工作人员协助上船。" } },
+        { emoji: "🦆", img: "garden-ducklings.jpg", link: "https://friendsofthepublicgarden.org/",
+          caption: { en: "2. 'Make Way for Ducklings'", zh: "2.《让路给小鸭子》" },
+          desc: { en: "The famous bronze mother duck and ducklings, honoring the classic children's book. A favorite photo and a hit with grandchildren.", zh: "著名的青铜鸭妈妈与小鸭子，取材于经典童书。热门拍照点，孩子们尤其喜欢。" } },
+        { emoji: "🌳", img: "garden-flowers.jpg", link: "https://friendsofthepublicgarden.org/",
+          caption: { en: "3. Lagoon, bridge & willows", zh: "3. 湖泊、小桥与垂柳" },
+          desc: { en: "Stroll the Victorian flower beds and weeping willows and cross the dainty little suspension bridge over the lagoon.", zh: "漫步于维多利亚式花圃与垂柳之间，走过横跨湖面的精巧小吊桥。" } },
+        { emoji: "🐴", img: "garden-washington.jpg", link: "https://friendsofthepublicgarden.org/",
+          caption: { en: "4. George Washington statue", zh: "4. 华盛顿骑马像" },
+          desc: { en: "The grand equestrian statue of George Washington at the Arlington Street gate — the garden's stately centerpiece.", zh: "矗立在 Arlington 街入口的华盛顿骑马铜像，是花园气派的标志性中心。" } },
       ],
     },
     "duck-tour": {
@@ -573,10 +586,19 @@ const TRIP = {
       },
       coords: [42.3473, -71.0821],
       mapQuery: "Boston Duck Tours Prudential Center",
+      links: [
+        { label: { en: "Tickets, times & departure points", zh: "购票、班次与出发点" }, url: "https://bostonducktours.com/" },
+      ],
       mustSee: [
-        { emoji: "🦆", img: "duck-vehicle.jpg", caption: { en: "Board the amphibious 'duck'", zh: "登上水陆两栖“鸭子船”" } },
-        { emoji: "🌊", img: "duck-river.jpg", caption: { en: "Splashing into the Charles River", zh: "“扑通”开进查尔斯河" } },
-        { emoji: "🏙️", img: "duck-skyline.jpg", caption: { en: "Skyline views from the water", zh: "从水上欣赏天际线" } },
+        { emoji: "🦆", img: "duck-vehicle.jpg", link: "https://bostonducktours.com/the-tour/",
+          caption: { en: "Board the amphibious 'duck'", zh: "登上水陆两栖“鸭子船”" },
+          desc: { en: "A colorful WWII-style DUKW. Step up once and stay seated the whole 80 minutes; wheelchair-accessible ducks can be arranged by phone.", zh: "色彩鲜明的二战风格 DUKW 两栖车。登车一次，全程80分钟舒适落座；可电话预约无障碍轮椅车。" } },
+        { emoji: "🌊", img: "duck-river.jpg", link: "https://bostonducktours.com/the-tour/",
+          caption: { en: "Splash into the Charles River", zh: "“扑通”开进查尔斯河" },
+          desc: { en: "Halfway through, the duck rolls down a ramp and floats — a gentle cruise on the Charles with skyline views all around.", zh: "行程过半时，鸭子船沿坡道驶入水中漂浮——在查尔斯河上平稳巡游，四周天际线尽收眼底。" } },
+        { emoji: "🏙️", img: "duck-skyline.jpg", link: "https://bostonducktours.com/the-tour/",
+          caption: { en: "Landmarks & skyline views", zh: "地标与天际线" },
+          desc: { en: "On land the guide points out Boston Common, Beacon Hill, the gold-domed State House, Quincy Market and more — a great overview.", zh: "在陆地上，导览员会一路指点波士顿公园、灯塔山、金顶州议会大厦、昆西市场等——是绝佳的全城概览。" } },
       ],
     },
     "freedom-trail": {
@@ -604,10 +626,85 @@ const TRIP = {
       },
       coords: [42.3601, -71.0568],
       mapQuery: "Faneuil Hall Quincy Market Boston",
+      links: [
+        { label: { en: "Official Freedom Trail map", zh: "自由之路官方地图" }, url: "https://www.thefreedomtrail.org/trail-map" },
+        { label: { en: "Parking: Boston Common Garage", zh: "停车：波士顿公园停车楼" }, url: "https://maps.apple.com/?q=Boston%20Common%20Garage&ll=42.3554,-71.0664" },
+      ],
+      tour: {
+        en: "Arrive by commuter rail (Back Bay or South Station) or drive and park at the Boston Common Garage. Start among the Swan Boats in the Public Garden, then follow the red line of the Freedom Trail east through Boston Common — past the gold-domed State House, Park Street Church, the Granary Burying Ground, and King's Chapel — to the Old State House, Faneuil Hall, and Quincy Market for lunch. From there the trail continues into the North End. To save your legs, hop the trolley between stops and step off only where you like; it loops you back.",
+        zh: "可乘通勤火车到 Back Bay 或 South Station，或自驾停在波士顿公园停车楼。先在公共花园的天鹅船边出发，再沿自由之路的红线向东穿过波士顿公园——经过金顶州议会大厦、公园街教堂、谷仓墓园和国王礼拜堂——到旧州议会厅、法尼尔厅，并在昆西市场吃午餐。由此自由之路继续通向北角。为了省力，可在各站之间乘坐随上随下观光车，想看哪站就在哪站下，它会载你绕回。",
+      },
+      tourMapSvg: `<svg viewBox="0 0 360 470" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Downtown Boston Freedom Trail map" font-family="-apple-system,Helvetica,Arial,sans-serif">
+  <rect x="0" y="0" width="360" height="470" fill="#f4f1ea"/>
+  <rect x="18" y="300" width="80" height="95" rx="3" fill="#dfe8d8" stroke="#cdddc2"/>
+  <rect x="102" y="248" width="100" height="132" rx="3" fill="#dfe8d8" stroke="#cdddc2"/>
+  <rect x="270" y="44" width="84" height="78" rx="3" fill="#ece7d8" stroke="#ddd6c2"/>
+  <line x1="99" y1="248" x2="99" y2="382" stroke="#d4ccba" stroke-width="7" stroke-linecap="round"/>
+  <g font-size="11" text-anchor="middle">
+    <text class="i18n-en" x="58" y="350" fill="#5f7a4f">Public Garden</text>
+    <text class="i18n-zh" x="58" y="350" fill="#5f7a4f">公共花园</text>
+    <text class="i18n-en" x="152" y="364" fill="#5f7a4f">Boston Common</text>
+    <text class="i18n-zh" x="152" y="364" fill="#5f7a4f">波士顿公园</text>
+    <text class="i18n-en" x="312" y="110" fill="#9a8f73">North End</text>
+    <text class="i18n-zh" x="312" y="110" fill="#9a8f73">北角</text>
+  </g>
+  <path d="M54,340 L150,298 L192,246 L226,232 L262,198 L286,166 L300,148" fill="none" stroke="#c8102e" stroke-width="6" stroke-opacity="0.55" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M300,148 L310,90" fill="none" stroke="#c8102e" stroke-width="4" stroke-opacity="0.55" stroke-dasharray="2 6" stroke-linecap="round"/>
+  <circle cx="54" cy="340" r="11" fill="#11697f" stroke="#fff" stroke-width="2.5"/>
+  <g text-anchor="middle" font-size="14" font-weight="700" fill="#fff">
+    <circle cx="150" cy="298" r="13" fill="#c8102e" stroke="#fff" stroke-width="2.5"/><text x="150" y="303">1</text>
+    <circle cx="192" cy="246" r="13" fill="#c8102e" stroke="#fff" stroke-width="2.5"/><text x="192" y="251">2</text>
+    <circle cx="226" cy="232" r="13" fill="#c8102e" stroke="#fff" stroke-width="2.5"/><text x="226" y="237">3</text>
+    <circle cx="262" cy="198" r="13" fill="#c8102e" stroke="#fff" stroke-width="2.5"/><text x="262" y="203">4</text>
+    <circle cx="286" cy="166" r="13" fill="#c8102e" stroke="#fff" stroke-width="2.5"/><text x="286" y="171">5</text>
+    <circle cx="300" cy="148" r="13" fill="#c8102e" stroke="#fff" stroke-width="2.5"/><text x="300" y="153">6</text>
+    <circle cx="310" cy="84" r="12" fill="#6b7280" stroke="#fff" stroke-width="2.5"/><text x="310" y="89" font-size="11">★</text>
+  </g>
+  <rect x="116" y="346" width="24" height="24" rx="5" fill="#11697f" stroke="#fff" stroke-width="2.5"/>
+  <text x="128" y="364" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">P</text>
+  <g fill="#1f4b73"><circle cx="200" cy="258" r="9" stroke="#fff" stroke-width="2"/><circle cx="96" cy="316" r="9" stroke="#fff" stroke-width="2"/></g>
+  <g text-anchor="middle" font-size="11" font-weight="700" fill="#fff"><text x="200" y="262">T</text><text x="96" y="320">T</text></g>
+  <g text-anchor="middle" font-size="10">
+    <text class="i18n-en" x="54" y="318" fill="#11697f">Swan Boats</text>
+    <text class="i18n-zh" x="54" y="318" fill="#11697f">天鹅船</text>
+    <text class="i18n-en" x="318" y="68" fill="#6b7280">Paul Revere / Old North</text>
+    <text class="i18n-zh" x="318" y="68" fill="#6b7280">里维尔故居 / 老北教堂</text>
+  </g>
+  <g><line x1="28" y1="430" x2="28" y2="411" stroke="#5a6776" stroke-width="2"/><path d="M28,407 L24,416 L32,416 Z" fill="#5a6776"/><text x="40" y="430" font-size="11" fill="#5a6776">N</text></g>
+  <g font-size="10.5" fill="#5a6776">
+    <line x1="120" y1="412" x2="146" y2="412" stroke="#c8102e" stroke-width="6" stroke-opacity="0.55" stroke-linecap="round"/>
+    <text class="i18n-en" x="152" y="416">Freedom Trail — walk or trolley</text>
+    <text class="i18n-zh" x="152" y="416">自由之路 — 步行或观光车</text>
+    <line x1="120" y1="430" x2="146" y2="430" stroke="#c8102e" stroke-width="4" stroke-opacity="0.55" stroke-dasharray="2 6"/>
+    <text class="i18n-en" x="152" y="434">Continue to North End (optional)</text>
+    <text class="i18n-zh" x="152" y="434">继续前往北角（可选）</text>
+    <rect x="118" y="442" width="14" height="14" rx="3" fill="#11697f"/><text x="125" y="453" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">P</text>
+    <text class="i18n-en" x="152" y="453">Parking (Boston Common Garage)</text>
+    <text class="i18n-zh" x="152" y="453">停车（波士顿公园停车楼）</text>
+    <circle cx="125" cy="463" r="7" fill="#1f4b73"/><text x="125" y="466" text-anchor="middle" font-size="9" font-weight="700" fill="#fff">T</text>
+    <text class="i18n-en" x="152" y="466">Subway (Green / Red Line)</text>
+    <text class="i18n-zh" x="152" y="466">地铁（绿线 / 红线）</text>
+  </g>
+</svg>`,
       mustSee: [
-        { emoji: "🏛️", img: "freedom-statehouse.jpg", caption: { en: "Massachusetts State House gold dome", zh: "马萨诸塞州议会大厦金顶" } },
-        { emoji: "🍽️", img: "freedom-quincy.jpg", caption: { en: "Quincy Market food hall (lunch & seating)", zh: "昆西市场美食大厅（午餐与座位）" } },
-        { emoji: "🔔", img: "freedom-faneuil.jpg", caption: { en: "Faneuil Hall, the 'Cradle of Liberty'", zh: "法尼尔厅，“自由的摇篮”" } },
+        { emoji: "🌳", img: "boston-common.jpg", link: "https://www.boston.gov/parks/boston-common",
+          caption: { en: "1. Boston Common", zh: "1. 波士顿公园" },
+          desc: { en: "America's oldest public park (1634) and the start of the Freedom Trail — wide paths, shade, and benches, with the Frog Pond at its heart.", zh: "美国最古老的公共公园（1634年），也是自由之路的起点——宽阔小径、绿荫和长椅，中心是“蛙塘”。" } },
+        { emoji: "🏛️", img: "freedom-statehouse.jpg", link: "https://www.thefreedomtrail.org/trail-sites/massachusetts-state-house",
+          caption: { en: "2. Massachusetts State House", zh: "2. 马萨诸塞州议会大厦" },
+          desc: { en: "The 1798 state capitol crowned by a shining gold dome, designed by Charles Bulfinch. A grand photo from the top of the Common.", zh: "建于1798年的州议会大厦，顶着金光闪闪的圆顶，由查尔斯·布尔芬奇设计。在公园高处拍照气派十足。" } },
+        { emoji: "⚰️", img: "freedom-granary.jpg", link: "https://www.thefreedomtrail.org/trail-sites/granary-burying-ground",
+          caption: { en: "3. Granary Burying Ground", zh: "3. 谷仓墓园" },
+          desc: { en: "An atmospheric 1660 graveyard and resting place of Paul Revere, John Hancock, Samuel Adams, and Benjamin Franklin's family.", zh: "气氛肃穆的1660年墓园，长眠着保罗·里维尔、约翰·汉考克、塞缪尔·亚当斯，以及本杰明·富兰克林的家人。" } },
+        { emoji: "🏦", img: "freedom-oldstatehouse.jpg", link: "https://revolutionaryspaces.org/",
+          caption: { en: "4. Old State House", zh: "4. 旧州议会厅" },
+          desc: { en: "Boston's oldest public building (1713). The Declaration of Independence was first read to the city from its balcony; the Boston Massacre happened just outside.", zh: "波士顿最古老的公共建筑（1713年）。《独立宣言》最初就是从它的阳台向全城宣读；波士顿惨案就发生在楼外。" } },
+        { emoji: "🔔", img: "freedom-faneuil.jpg", link: "https://www.nps.gov/bost/",
+          caption: { en: "5. Faneuil Hall", zh: "5. 法尼尔厅" },
+          desc: { en: "The 'Cradle of Liberty,' a public meeting hall since 1743 where colonists debated independence. A National Park visitor center is on the ground floor.", zh: "“自由的摇篮”，自1743年起便是公共集会场所，殖民者曾在此辩论独立。底层设有国家公园访客中心。" } },
+        { emoji: "🍽️", img: "freedom-quincy.jpg", link: "https://faneuilhallmarketplace.com/",
+          caption: { en: "6. Quincy Market (lunch)", zh: "6. 昆西市场（午餐）" },
+          desc: { en: "A grand 1826 market hall, now a covered food court with dozens of stalls and plenty of seating — the easy, sheltered lunch stop.", zh: "建于1826年的宏伟市场大厅，如今是有顶的美食广场，数十个摊位、座位充足——轻松又遮风避雨的午餐之选。" } },
       ],
     },
     "north-end": {
@@ -635,10 +732,23 @@ const TRIP = {
       },
       coords: [42.3637, -71.0537],
       mapQuery: "Paul Revere House North End Boston",
+      links: [
+        { label: { en: "Paul Revere House", zh: "保罗·里维尔故居" }, url: "https://www.paulreverehouse.org/" },
+        { label: { en: "Old North Church", zh: "老北教堂" }, url: "https://oldnorth.com/" },
+      ],
       mustSee: [
-        { emoji: "🏠", img: "northend-revere.jpg", caption: { en: "Paul Revere House — Boston's oldest home", zh: "保罗·里维尔故居——波士顿最古老的住宅" } },
-        { emoji: "⛪", img: "northend-church.jpg", caption: { en: "Old North Church (1775 lantern signal)", zh: "老北教堂（1775年灯笼信号）" } },
-        { emoji: "🍰", img: "northend-cannoli.jpg", caption: { en: "Fresh Italian cannoli", zh: "新鲜的意式奶油卷" } },
+        { emoji: "🏠", img: "northend-revere.jpg", link: "https://www.paulreverehouse.org/",
+          caption: { en: "1. Paul Revere House", zh: "1. 保罗·里维尔故居" },
+          desc: { en: "Built around 1680, this is downtown Boston's oldest building and the home of patriot Paul Revere. A small admission lets you step inside.", zh: "建于约1680年，是波士顿市区最古老的建筑，也是爱国者保罗·里维尔的故居。购少量门票即可入内参观。" } },
+        { emoji: "🐴", img: "northend-mall.jpg", link: "https://oldnorth.com/",
+          caption: { en: "2. Paul Revere Mall (the Prado)", zh: "2. 保罗·里维尔广场" },
+          desc: { en: "A peaceful brick courtyard with the famous equestrian statue of Paul Revere, framing a view of the Old North Church steeple behind.", zh: "一处静谧的红砖庭院，立着著名的保罗·里维尔骑马像，背后正好衬出老北教堂的尖塔。" } },
+        { emoji: "⛪", img: "northend-church.jpg", link: "https://oldnorth.com/",
+          caption: { en: "3. Old North Church", zh: "3. 老北教堂" },
+          desc: { en: "Boston's oldest standing church (1723). From its steeple in 1775 hung the two lanterns — 'one if by land, two if by sea' — that began Revere's ride.", zh: "波士顿现存最古老的教堂（1723年）。1775年，正是从它的塔楼挂出两盏灯笼——“陆路挂一盏，海路挂两盏”——拉开了里维尔骑行的序幕。" } },
+        { emoji: "🍰", img: "northend-cannoli.jpg",
+          caption: { en: "4. Cannoli on Hanover Street", zh: "4. 汉诺威街的奶油卷" },
+          desc: { en: "Cap the visit with a fresh cannoli from Mike's Pastry or Modern Pastry — the North End's beloved, much-debated rivalry.", zh: "用一只新鲜的奶油卷为这趟参观收尾——来自 Mike's Pastry 或 Modern Pastry，是北角广受喜爱、各有拥趸的“甜点之争”。" } },
       ],
     },
 

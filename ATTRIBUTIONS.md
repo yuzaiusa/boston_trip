@@ -4,6 +4,7 @@ All images below are from [Wikimedia Commons](https://commons.wikimedia.org) and
 
 | File | Source (Wikimedia Commons) | Author | License |
 |---|---|---|---|
+| `boston-common.jpg` | [Boston Common November 2016 002.jpg](https://commons.wikimedia.org/wiki/File:Boston_Common_November_2016_002.jpg) | King of Hearts | CC BY-SA 4.0 |
 | `chinatown-bakery.jpg` | [Egg yolk pastry (20240913).jpg](https://commons.wikimedia.org/wiki/File:Egg_yolk_pastry_(20240913).jpg) | Fumikas Sagisavas | CC0 |
 | `chinatown-dimsum.jpg` | [Three dim sum in steamer basket.jpg](https://commons.wikimedia.org/wiki/File:Three_dim_sum_in_steamer_basket.jpg) | Mshuang2 | CC0 |
 | `chinatown-gate.jpg` | [Chinatown Gate Boston.jpg](https://commons.wikimedia.org/wiki/File:Chinatown_Gate_Boston.jpg) | Alacoolwiki | CC BY-SA 4.0 |
@@ -11,11 +12,14 @@ All images below are from [Wikimedia Commons](https://commons.wikimedia.org) and
 | `duck-skyline.jpg` | [Charles River Esplanade Boston May 2018 panorama](https://commons.wikimedia.org/wiki/File:Charles_River_Esplanade_Boston_May_2018_panorama.jpg) | King of Hearts | CC BY-SA 4.0 |
 | `duck-vehicle.jpg` | [Boston Duck Tours amphibious DUKW vehicle.jpg](https://commons.wikimedia.org/wiki/File:Boston_Duck_Tours_amphibious_DUKW_vehicle.jpg) | Beyond My Ken | CC BY-SA 4.0 |
 | `freedom-faneuil.jpg` | [Faneuil Hall Boston Massachusetts.JPG](https://commons.wikimedia.org/wiki/File:Faneuil_Hall_Boston_Massachusetts.JPG) | en:User:Daderot | CC BY-SA 3.0 |
+| `freedom-granary.jpg` | [John Foster Williams burial place (36100).jpg](https://commons.wikimedia.org/wiki/File:John_Foster_Williams_burial_place_(36100).jpg) | Rhododendrites | CC BY-SA 4.0 |
+| `freedom-oldstatehouse.jpg` | [Old State House, Boston, MA, 2023-02-21 01.jpg](https://commons.wikimedia.org/wiki/File:Old_State_House,_Boston,_MA,_2023-02-21_01.jpg) | Crisco 1492 | CC BY-SA 4.0 |
 | `freedom-quincy.jpg` | [Quincy Market interior.jpg](https://commons.wikimedia.org/wiki/File:Quincy_Market_interior.jpg) | Sharon Mollerus | CC BY 2.0 |
 | `freedom-statehouse.jpg` | [Dome-Massachusetts-State-House-Boston.jpg](https://commons.wikimedia.org/wiki/File:Dome-Massachusetts-State-House-Boston.jpg) | Acediscovery | CC BY 4.0 |
 | `garden-ducklings.jpg` | [Make Way for Ducklings in winter.jpg](https://commons.wikimedia.org/wiki/File:Make_Way_for_Ducklings_in_winter.jpg) | Numbered | CC BY-SA 4.0 |
 | `garden-flowers.jpg` | [Boston Public Garden May 2018 003.jpg](https://commons.wikimedia.org/wiki/File:Boston_Public_Garden_May_2018_003.jpg) | King of Hearts | CC BY-SA 4.0 |
 | `garden-swanboat.jpg` | [Boston Public Garden May 2018 002.jpg](https://commons.wikimedia.org/wiki/File:Boston_Public_Garden_May_2018_002.jpg) | King of Hearts | CC BY-SA 4.0 |
+| `garden-washington.jpg` | [George Washington statue in the Boston Public Ga](https://commons.wikimedia.org/wiki/File:George_Washington_statue_in_the_Boston_Public_Garden_-_DSC08205.JPG) | Daderot | CC0 |
 | `harvard-artmuseums.jpg` | [HarvardArtsMuseums.jpg](https://commons.wikimedia.org/wiki/File:HarvardArtsMuseums.jpg) | JanManu | CC BY-SA 4.0 |
 | `harvard-church.jpg` | [Memorial Church, Harvard Campus, Cambridge, Mass](https://commons.wikimedia.org/wiki/File:Memorial_Church,_Harvard_Campus,_Cambridge,_Massachusetts.jpg) | Rizka | CC BY-SA 4.0 |
 | `harvard-johnstongate.jpg` | [Johnston Gate (Harvard Yard) - IMG 8974.JPG](https://commons.wikimedia.org/wiki/File:Johnston_Gate_(Harvard_Yard)_-_IMG_8974.JPG) | Daderot | Public domain |
@@ -33,6 +37,7 @@ All images below are from [Wikimedia Commons](https://commons.wikimedia.org) and
 | `mit-stata.jpg` | [Stata Center (05689p)2.jpg](https://commons.wikimedia.org/wiki/File:Stata_Center_(05689p)2.jpg) | Rhododendrites | CC BY-SA 4.0 |
 | `northend-cannoli.jpg` | [Cannoli in a box.jpg](https://commons.wikimedia.org/wiki/File:Cannoli_in_a_box.jpg) | Quinn Dombrowski from Berkeley, USA | CC BY-SA 2.0 |
 | `northend-church.jpg` | [Old North Church spire.jpg](https://commons.wikimedia.org/wiki/File:Old_North_Church_spire.jpg) | Farragutful | CC BY-SA 4.0 |
+| `northend-mall.jpg` | [Paul Revere Statue by Cyrus E. Dallin, North End](https://commons.wikimedia.org/wiki/File:Paul_Revere_Statue_by_Cyrus_E._Dallin,_North_End,_Boston,_MA.JPG) | The original uploader was Daderot at English Wikipedia. | CC BY-SA 3.0 |
 | `northend-revere.jpg` | [The Paul Revere House (926711833).jpg](https://commons.wikimedia.org/wiki/File:The_Paul_Revere_House_(926711833).jpg) | Rob Young from United Kingdom | CC BY 2.0 |
 | `yale-artgallery.jpg` | [Swartwout Building, Yale University Art Gallery ](https://commons.wikimedia.org/wiki/File:Swartwout_Building,_Yale_University_Art_Gallery_-_20120428.jpg) | Smuconlaw. | CC BY-SA 3.0 |
 | `yale-beinecke.jpg` | [20170420 Beinecke Rare Book Library Interior Yal](https://commons.wikimedia.org/wiki/File:20170420_Beinecke_Rare_Book_Library_Interior_Yale_University_New_Haven_Connecticut.jpg) | Michael Kastelic | CC BY-SA 4.0 |
