@@ -256,13 +256,14 @@
         ])
       );
 
-    if (s.tour)
-      wrap.appendChild(
-        el("section", { class: "panel tour" }, [
-          el("h3", { class: "panel-title", text: "🚶 " + t("tourTitle") }),
-          el("p", { text: L(s.tour) }),
-        ])
-      );
+    if (s.tour) {
+      var tourPanel = el("section", { class: "panel tour" }, [
+        el("h3", { class: "panel-title", text: "🚶 " + t("tourTitle") }),
+        el("p", { text: L(s.tour) }),
+      ]);
+      if (s.tourMapSvg) tourPanel.appendChild(el("div", { class: "tour-map", html: s.tourMapSvg }));
+      wrap.appendChild(tourPanel);
+    }
 
     if (s.mustSee && s.mustSee.length) {
       var gallery = el("div", { class: "gallery" });

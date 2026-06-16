@@ -153,6 +153,69 @@ const TRIP = {
         en: "All of the highlights below sit within a flat, compact half-mile of central campus — pick as many as your legs like. A natural order: enter Old Campus through Phelps Gate (across from the New Haven Green), walk north to Sterling Memorial Library and the glowing Beinecke, pause at the Schwarzman Center, then head south on Chapel Street to the two free art museums. The Peabody Museum is a short drive north. Finish with lunch on Wooster Street.",
         zh: "下面的亮点都集中在校园中心、地势平坦、方圆约半英里之内——体力允许就多看几处。建议顺序：从面向纽黑文中心绿地的 Phelps Gate 走进老校区，向北前往斯特林纪念图书馆和通透发光的拜内克图书馆，在施瓦茨曼中心歇歇脚，再沿 Chapel 街向南到两座免费艺术博物馆。皮博迪博物馆在北面，开车几分钟即到。最后到伍斯特街吃午餐。",
       },
+      tourMapSvg: `<svg viewBox="0 0 360 470" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Yale walking tour map" font-family="-apple-system,Helvetica,Arial,sans-serif">
+  <rect x="0" y="0" width="360" height="470" fill="#f4f1ea"/>
+  <!-- blocks -->
+  <rect x="232" y="217" width="88" height="128" rx="3" fill="#dfe8d8" stroke="#cdddc2"/>
+  <rect x="142" y="217" width="88" height="128" rx="3" fill="#ece7d8" stroke="#ddd6c2"/>
+  <!-- streets -->
+  <g stroke="#d4ccba" stroke-width="7" stroke-linecap="round">
+    <line x1="50" y1="92" x2="50" y2="398"/>
+    <line x1="140" y1="44" x2="140" y2="408"/>
+    <line x1="230" y1="44" x2="230" y2="398"/>
+    <line x1="42" y1="75" x2="322" y2="75"/>
+    <line x1="72" y1="125" x2="300" y2="125"/>
+    <line x1="42" y1="215" x2="330" y2="215"/>
+    <line x1="30" y1="345" x2="330" y2="345"/>
+  </g>
+  <!-- street + block labels -->
+  <g font-size="10.5" fill="#8a8270">
+    <text x="146" y="58">High St</text>
+    <text x="236" y="58">College St</text>
+    <text x="42" y="103">York St</text>
+    <text x="46" y="71">Grove St</text>
+    <text x="76" y="121">Wall St</text>
+    <text x="46" y="211">Elm St</text>
+    <text x="34" y="362">Chapel St</text>
+  </g>
+  <g font-size="11" text-anchor="middle">
+    <text class="i18n-en" x="276" y="287" fill="#5f7a4f">New Haven Green</text>
+    <text class="i18n-zh" x="276" y="287" fill="#5f7a4f">纽黑文中心绿地</text>
+    <text class="i18n-en" x="188" y="332" fill="#9a8f73">Old Campus</text>
+    <text class="i18n-zh" x="188" y="332" fill="#9a8f73">老校区</text>
+  </g>
+  <!-- walking route -->
+  <path d="M230,285 L185,270 L132,130 L182,116 L230,80 L150,210 L152,336 L118,353" fill="none" stroke="#0b4f6c" stroke-width="7" stroke-opacity="0.45" stroke-linejoin="round" stroke-linecap="round"/>
+  <!-- drive to Peabody -->
+  <path d="M230,80 L292,60 L318,52" fill="none" stroke="#8a8270" stroke-width="4" stroke-dasharray="2 6" stroke-linecap="round"/>
+  <g stroke="#8a8270" stroke-width="2"><line x1="258" y1="74" x2="266" y2="62"/><line x1="266" y1="76" x2="274" y2="64"/></g>
+  <!-- markers -->
+  <g text-anchor="middle" font-size="14" font-weight="700" fill="#fff">
+    <circle cx="230" cy="285" r="13" fill="#c8102e" stroke="#fff" stroke-width="2.5"/><text x="230" y="290">1</text>
+    <circle cx="185" cy="270" r="13" fill="#c8102e" stroke="#fff" stroke-width="2.5"/><text x="185" y="275">2</text>
+    <circle cx="132" cy="130" r="13" fill="#c8102e" stroke="#fff" stroke-width="2.5"/><text x="132" y="135">3</text>
+    <circle cx="182" cy="116" r="13" fill="#c8102e" stroke="#fff" stroke-width="2.5"/><text x="182" y="121">4</text>
+    <circle cx="230" cy="80" r="13" fill="#c8102e" stroke="#fff" stroke-width="2.5"/><text x="230" y="85">5</text>
+    <circle cx="152" cy="336" r="13" fill="#c8102e" stroke="#fff" stroke-width="2.5"/><text x="152" y="341">6</text>
+    <circle cx="118" cy="353" r="13" fill="#c8102e" stroke="#fff" stroke-width="2.5"/><text x="118" y="358">7</text>
+    <circle cx="320" cy="50" r="13" fill="#6b7280" stroke="#fff" stroke-width="2.5"/><text x="320" y="55">8</text>
+  </g>
+  <g text-anchor="middle" font-size="10" fill="#6b7280">
+    <text class="i18n-en" x="320" y="76">Peabody &#8599;</text>
+    <text class="i18n-zh" x="320" y="76">皮博迪 &#8599;</text>
+  </g>
+  <!-- north arrow -->
+  <g><line x1="28" y1="55" x2="28" y2="36" stroke="#5a6776" stroke-width="2"/><path d="M28,32 L24,41 L32,41 Z" fill="#5a6776"/><text x="28" y="70" text-anchor="middle" font-size="11" fill="#5a6776">N</text></g>
+  <!-- legend -->
+  <g font-size="11" fill="#5a6776">
+    <line x1="30" y1="425" x2="58" y2="425" stroke="#0b4f6c" stroke-width="6" stroke-opacity="0.5" stroke-linecap="round"/>
+    <text class="i18n-en" x="64" y="429">Walking route (about 0.5 mi)</text>
+    <text class="i18n-zh" x="64" y="429">步行路线（约0.5英里）</text>
+    <line x1="30" y1="448" x2="58" y2="448" stroke="#8a8270" stroke-width="4" stroke-dasharray="2 6"/>
+    <text class="i18n-en" x="64" y="452">Drive to &#9312;&#8201;Peabody (optional)</text>
+    <text class="i18n-zh" x="64" y="452">驾车前往⑧皮博迪（可选）</text>
+  </g>
+</svg>`,
       mustSee: [
         { emoji: "🚪", img: "yale-visitorcenter.jpg", link: "https://visitorcenter.yale.edu/",
           caption: { en: "1. Phelps Gate & Visitor Center", zh: "1. Phelps 校门与访客中心" },
