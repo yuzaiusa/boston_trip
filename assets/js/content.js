@@ -778,10 +778,76 @@ const TRIP = {
       },
       coords: [42.3515, -71.0621],
       mapQuery: "Chinatown Gate Boston",
+      links: [
+        { label: { en: "Parking: 40 Beach St Garage", zh: "停车：40 Beach St 停车楼" }, url: "https://maps.apple.com/?q=40%20Beach%20Street%20Garage%20Boston&ll=42.3517,-71.0612" },
+        { label: { en: "Chinatown Park (Greenway)", zh: "唐人街公园（绿道）" }, url: "https://www.rosekennedygreenway.org/parks/chinatown-park" },
+      ],
+      tour: {
+        en: "Park at the 40 Beach Street Garage (a flat-rate lot right in Chinatown), then enjoy a few flat, easy blocks. Start at the grand Chinatown Gate, peek at the small Chinatown Park on the Greenway just behind it, then stroll the lantern-lined streets to an early dim-sum or sit-down lunch. Pick up sweets at a Chinese bakery for the road, and you're a short walk back to the car for the drive home.",
+        zh: "把车停在 40 Beach Street 停车楼（就在唐人街内的统一价停车场），然后悠闲地逛几个平坦好走的街区。先到宏伟的唐人街牌楼，再看看牌楼后方绿道上的小型唐人街公园，接着沿挂满灯笼的街道散步，去吃一顿早点心或坐下来好好用午餐。在中式糕点店买些点心带上路，之后步行不远即可回到车上启程返家。",
+      },
+      tourMapSvg: `<svg viewBox="0 0 360 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Boston Chinatown walking map" font-family="-apple-system,Helvetica,Arial,sans-serif">
+  <rect x="0" y="0" width="360" height="320" fill="#f4f1ea"/>
+  <rect x="296" y="150" width="50" height="95" rx="3" fill="#dfe8d8" stroke="#cdddc2"/>
+  <g stroke="#d4ccba" stroke-width="7" stroke-linecap="round">
+    <line x1="40" y1="210" x2="300" y2="210"/>
+    <line x1="288" y1="70" x2="288" y2="280"/>
+    <line x1="120" y1="110" x2="120" y2="280"/>
+    <line x1="190" y1="120" x2="190" y2="280"/>
+  </g>
+  <g font-size="10.5" fill="#8a8270">
+    <text x="46" y="228">Beach St</text>
+    <text x="300" y="150" transform="rotate(90 300,150)">Greenway</text>
+    <text x="92" y="104">Harrison Ave</text>
+    <text x="194" y="116">Tyler St</text>
+  </g>
+  <g font-size="11" text-anchor="middle">
+    <text class="i18n-en" x="320" y="200" fill="#5f7a4f">Chinatown</text>
+    <text class="i18n-en" x="320" y="214" fill="#5f7a4f">Park</text>
+    <text class="i18n-zh" x="320" y="205" fill="#5f7a4f">唐人街公园</text>
+  </g>
+  <path d="M170,210 L278,212 L320,200 L210,200 L145,186 L92,196 L170,210" fill="none" stroke="#c8102e" stroke-width="6" stroke-opacity="0.5" stroke-linejoin="round" stroke-linecap="round"/>
+  <g text-anchor="middle" font-size="14" font-weight="700" fill="#fff">
+    <circle cx="278" cy="212" r="13" fill="#c8102e" stroke="#fff" stroke-width="2.5"/><text x="278" y="217">1</text>
+    <circle cx="320" cy="200" r="13" fill="#c8102e" stroke="#fff" stroke-width="2.5"/><text x="320" y="205">2</text>
+    <circle cx="210" cy="200" r="13" fill="#c8102e" stroke="#fff" stroke-width="2.5"/><text x="210" y="205">3</text>
+    <circle cx="145" cy="186" r="13" fill="#c8102e" stroke="#fff" stroke-width="2.5"/><text x="145" y="191">4</text>
+    <circle cx="92" cy="196" r="13" fill="#c8102e" stroke="#fff" stroke-width="2.5"/><text x="92" y="201">5</text>
+  </g>
+  <rect x="158" y="198" width="24" height="24" rx="5" fill="#11697f" stroke="#fff" stroke-width="2.5"/>
+  <text x="170" y="216" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">P</text>
+  <g text-anchor="middle" font-size="10">
+    <text class="i18n-en" x="262" y="240" fill="#c8102e">Gate</text>
+    <text class="i18n-zh" x="262" y="240" fill="#c8102e">牌楼</text>
+    <text class="i18n-en" x="170" y="246" fill="#11697f">40 Beach St Garage</text>
+    <text class="i18n-zh" x="170" y="246" fill="#11697f">40 Beach St 停车楼</text>
+  </g>
+  <g><line x1="28" y1="58" x2="28" y2="39" stroke="#5a6776" stroke-width="2"/><path d="M28,35 L24,44 L32,44 Z" fill="#5a6776"/><text x="28" y="73" text-anchor="middle" font-size="11" fill="#5a6776">N</text></g>
+  <g font-size="10.5" fill="#5a6776">
+    <line x1="30" y1="284" x2="56" y2="284" stroke="#c8102e" stroke-width="6" stroke-opacity="0.5" stroke-linecap="round"/>
+    <text class="i18n-en" x="62" y="288">Walking loop (a few flat blocks)</text>
+    <text class="i18n-zh" x="62" y="288">步行环线（几个平坦街区）</text>
+    <rect x="30" y="300" width="15" height="15" rx="3" fill="#11697f"/><text x="37.5" y="312" text-anchor="middle" font-size="10.5" font-weight="700" fill="#fff">P</text>
+    <text class="i18n-en" x="52" y="312">Parking — start &amp; end of the walk</text>
+    <text class="i18n-zh" x="52" y="312">停车场 — 步行起点与终点</text>
+  </g>
+</svg>`,
       mustSee: [
-        { emoji: "🏮", img: "chinatown-gate.jpg", caption: { en: "The historic paifang Chinatown Gate", zh: "历史悠久的唐人街牌楼" } },
-        { emoji: "🥟", img: "chinatown-dimsum.jpg", caption: { en: "Dim sum & roast meats", zh: "点心与烧腊" } },
-        { emoji: "🥮", img: "chinatown-bakery.jpg", caption: { en: "Chinese bakeries for the road", zh: "中式糕点带上路" } },
+        { emoji: "🏮", img: "chinatown-gate.jpg", link: "https://www.rosekennedygreenway.org/parks/chinatown-park",
+          caption: { en: "1. The Chinatown Gate (paifang)", zh: "1. 唐人街牌楼" },
+          desc: { en: "The grand four-pillar gate marks the entrance to Chinatown, guarded by two stone lions (foo dogs). A favourite first photo.", zh: "这座宏伟的四柱牌楼标示着唐人街的入口，两侧由石狮把守，是绝佳的第一张合影。" } },
+        { emoji: "🌿", img: "chinatown-park.jpg", link: "https://www.rosekennedygreenway.org/parks/chinatown-park",
+          caption: { en: "2. Chinatown Park", zh: "2. 唐人街公园" },
+          desc: { en: "A small, pretty park on the Rose Kennedy Greenway just behind the gate, with a winding red path and a bamboo grove — a quiet place to sit.", zh: "牌楼后方、罗丝·肯尼迪绿道上的一处小巧雅致的公园，有蜿蜒的红色步道和竹林——是坐下小憩的清静之地。" } },
+        { emoji: "🏮", img: "chinatown-street.jpg",
+          caption: { en: "3. Lantern-lined streets", zh: "3. 挂满灯笼的街道" },
+          desc: { en: "Beach Street and Tyler Street form the lively heart of Chinatown — red lanterns, bilingual signs, herbal shops, and bustling restaurants.", zh: "Beach 街与 Tyler 街是唐人街热闹的核心——红灯笼、双语招牌、中药铺和熙攘的餐馆。" } },
+        { emoji: "🥟", img: "chinatown-dimsum.jpg",
+          caption: { en: "4. Dim sum or a sit-down lunch", zh: "4. 点心或坐下来用午餐" },
+          desc: { en: "The reason for the stop: roast meats, fresh seafood, and carts of dim sum. Arrive around 11:30am to beat the crowd before the long drive.", zh: "此行的重头戏：烧腊、新鲜海鲜和一笼笼的点心。建议约上午11:30到，在长途驾驶前避开人潮。" } },
+        { emoji: "🥮", img: "chinatown-bakery.jpg",
+          caption: { en: "5. Chinese bakery for the road", zh: "5. 带上路的中式糕点" },
+          desc: { en: "Before heading back to the car, pick up egg tarts, mooncakes, or buns from a Chinese bakery to enjoy on the drive home.", zh: "回到车上之前，到中式糕点店买些蛋挞、月饼或包点，留在返程路上享用。" } },
       ],
     },
   },

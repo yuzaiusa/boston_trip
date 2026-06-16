@@ -8,6 +8,8 @@ All images below are from [Wikimedia Commons](https://commons.wikimedia.org) and
 | `chinatown-bakery.jpg` | [Egg yolk pastry (20240913).jpg](https://commons.wikimedia.org/wiki/File:Egg_yolk_pastry_(20240913).jpg) | Fumikas Sagisavas | CC0 |
 | `chinatown-dimsum.jpg` | [Three dim sum in steamer basket.jpg](https://commons.wikimedia.org/wiki/File:Three_dim_sum_in_steamer_basket.jpg) | Mshuang2 | CC0 |
 | `chinatown-gate.jpg` | [Chinatown Gate Boston.jpg](https://commons.wikimedia.org/wiki/File:Chinatown_Gate_Boston.jpg) | Alacoolwiki | CC BY-SA 4.0 |
+| `chinatown-park.jpg` | [Chinatown Park, Boston.JPG](https://commons.wikimedia.org/wiki/File:Chinatown_Park,_Boston.JPG) | NewtonCourt | CC BY-SA 4.0 |
+| `chinatown-street.jpg` | [Boston Chinatown 2006 05 25.JPG](https://commons.wikimedia.org/wiki/File:Boston_Chinatown_2006_05_25.JPG) | No machine-readable author provided. Atlant assumed (based o | CC BY 2.5 |
 | `duck-river.jpg` | [Sailboats on the Charles River (51580942691).jpg](https://commons.wikimedia.org/wiki/File:Sailboats_on_the_Charles_River_(51580942691).jpg) | Nick Ledford from Palm Harbor, United States | CC BY 2.0 |
 | `duck-skyline.jpg` | [Charles River Esplanade Boston May 2018 panorama](https://commons.wikimedia.org/wiki/File:Charles_River_Esplanade_Boston_May_2018_panorama.jpg) | King of Hearts | CC BY-SA 4.0 |
 | `duck-vehicle.jpg` | [Boston Duck Tours amphibious DUKW vehicle.jpg](https://commons.wikimedia.org/wiki/File:Boston_Duck_Tours_amphibious_DUKW_vehicle.jpg) | Beyond My Ken | CC BY-SA 4.0 |
