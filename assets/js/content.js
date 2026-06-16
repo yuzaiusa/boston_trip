@@ -319,11 +319,91 @@ const TRIP = {
       },
       coords: [42.3744, -71.1169],
       mapQuery: "Harvard Yard, Cambridge MA",
+      links: [
+        { label: { en: "Searchable campus map", zh: "校园地图（可搜索）" }, url: "https://map.harvard.edu/" },
+        { label: { en: "Parking: Smith Center Garage", zh: "停车：史密斯中心停车楼" }, url: "https://maps.apple.com/?q=Smith%20Campus%20Center%20Garage%201350%20Massachusetts%20Ave%20Cambridge&ll=42.3725,-71.1185" },
+      ],
+      tour: {
+        en: "Park at the Smith Campus Center Garage (1350 Massachusetts Ave), right on Harvard Square beside the Yard, and walk this flat loop. Browse the Square, then enter the Yard through the Johnston Gate to the John Harvard statue, Memorial Church, and grand Widener Library. Just east of the Yard are the free Harvard Art Museums and Victorian Memorial Hall. The Harvard Museum of Natural History and its famous Glass Flowers are a short, optional walk north. Plenty of lunch spots line Harvard Square.",
+        zh: "把车停在史密斯校园中心停车楼（1350 Massachusetts Ave），就在哈佛广场、紧邻哈佛园，然后步行这条平坦的环线。先逛逛广场，再从约翰斯顿校门走进哈佛园，看约翰·哈佛雕像、纪念教堂和宏伟的怀德纳图书馆。哈佛园以东就是免费的哈佛艺术博物馆和维多利亚式的纪念厅。哈佛自然历史博物馆及其著名的“玻璃花”在北面，步行不远，可作为可选项目。哈佛广场上有许多午餐去处。",
+      },
+      tourMapSvg: `<svg viewBox="0 0 360 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Harvard walking tour map" font-family="-apple-system,Helvetica,Arial,sans-serif">
+  <rect x="0" y="0" width="360" height="480" fill="#f4f1ea"/>
+  <rect x="100" y="160" width="150" height="150" rx="3" fill="#ece7d8" stroke="#ddd6c2"/>
+  <g stroke="#d4ccba" stroke-width="7" stroke-linecap="round">
+    <polyline points="150,430 95,355 95,150" fill="none"/>
+    <line x1="95" y1="148" x2="320" y2="148"/>
+    <line x1="268" y1="150" x2="268" y2="330"/>
+    <line x1="205" y1="148" x2="205" y2="55"/>
+  </g>
+  <g font-size="10.5" fill="#8a8270">
+    <text x="55" y="300">Mass Ave</text>
+    <text x="250" y="143">Cambridge St</text>
+    <text x="272" y="300" transform="rotate(90 272,300)">Quincy St</text>
+    <text x="209" y="70">Oxford St</text>
+  </g>
+  <g font-size="11" text-anchor="middle">
+    <text class="i18n-en" x="175" y="240" fill="#9a8f73">Harvard Yard</text>
+    <text class="i18n-zh" x="175" y="240" fill="#9a8f73">哈佛园</text>
+  </g>
+  <path d="M78,375 L118,360 L105,172 L150,225 L205,193 L208,265 L298,258 L298,165 L78,375" fill="none" stroke="#0b4f6c" stroke-width="7" stroke-opacity="0.4" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M298,165 L210,80" fill="none" stroke="#8a8270" stroke-width="4" stroke-dasharray="2 6" stroke-linecap="round"/>
+  <g text-anchor="middle" font-size="14" font-weight="700" fill="#fff">
+    <circle cx="118" cy="360" r="13" fill="#c8102e" stroke="#fff" stroke-width="2.5"/><text x="118" y="365">1</text>
+    <circle cx="105" cy="172" r="13" fill="#c8102e" stroke="#fff" stroke-width="2.5"/><text x="105" y="177">2</text>
+    <circle cx="150" cy="225" r="13" fill="#c8102e" stroke="#fff" stroke-width="2.5"/><text x="150" y="230">3</text>
+    <circle cx="205" cy="193" r="13" fill="#c8102e" stroke="#fff" stroke-width="2.5"/><text x="205" y="198">4</text>
+    <circle cx="208" cy="265" r="13" fill="#c8102e" stroke="#fff" stroke-width="2.5"/><text x="208" y="270">5</text>
+    <circle cx="298" cy="258" r="13" fill="#c8102e" stroke="#fff" stroke-width="2.5"/><text x="298" y="263">6</text>
+    <circle cx="298" cy="165" r="13" fill="#c8102e" stroke="#fff" stroke-width="2.5"/><text x="298" y="170">7</text>
+    <circle cx="210" cy="72" r="13" fill="#6b7280" stroke="#fff" stroke-width="2.5"/><text x="210" y="77">8</text>
+  </g>
+  <rect x="65" y="362" width="26" height="26" rx="5" fill="#11697f" stroke="#fff" stroke-width="2.5"/>
+  <text x="78" y="381" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">P</text>
+  <g text-anchor="middle" font-size="10">
+    <text class="i18n-en" x="210" y="98" fill="#6b7280">Nat. History</text>
+    <text class="i18n-zh" x="210" y="98" fill="#6b7280">自然史馆</text>
+    <text class="i18n-en" x="78" y="403" fill="#11697f">Smith Ctr Garage</text>
+    <text class="i18n-zh" x="78" y="403" fill="#11697f">史密斯中心停车楼</text>
+  </g>
+  <g><line x1="28" y1="55" x2="28" y2="36" stroke="#5a6776" stroke-width="2"/><path d="M28,32 L24,41 L32,41 Z" fill="#5a6776"/><text x="28" y="70" text-anchor="middle" font-size="11" fill="#5a6776">N</text></g>
+  <g font-size="11" fill="#5a6776">
+    <line x1="30" y1="430" x2="58" y2="430" stroke="#0b4f6c" stroke-width="6" stroke-opacity="0.5" stroke-linecap="round"/>
+    <text class="i18n-en" x="64" y="434">Walking loop (about 1 mile)</text>
+    <text class="i18n-zh" x="64" y="434">步行环线（约1英里）</text>
+    <line x1="30" y1="452" x2="58" y2="452" stroke="#8a8270" stroke-width="4" stroke-dasharray="2 6"/>
+    <text class="i18n-en" x="64" y="456">Optional walk to ⑧ Natural History</text>
+    <text class="i18n-zh" x="64" y="456">可选步行至⑧自然史博物馆</text>
+    <rect x="30" y="466" width="15" height="15" rx="3" fill="#11697f"/><text x="37.5" y="478" text-anchor="middle" font-size="10.5" font-weight="700" fill="#fff">P</text>
+    <text class="i18n-en" x="52" y="478">Parking — start &amp; end</text>
+    <text class="i18n-zh" x="52" y="478">停车场 — 起点与终点</text>
+  </g>
+</svg>`,
       mustSee: [
-        { emoji: "🗽", img: "harvard-statue.jpg", caption: { en: "John Harvard statue — rub the shoe!", zh: "约翰·哈佛雕像——摸摸鞋子！" } },
-        { emoji: "📚", img: "harvard-widener.jpg", caption: { en: "Widener Library's grand steps", zh: "怀德纳图书馆的宏伟台阶" } },
-        { emoji: "⛪", img: "harvard-church.jpg", caption: { en: "Memorial Church & the leafy Yard", zh: "纪念教堂与绿荫校园" } },
-        { emoji: "🛍️", img: "harvard-square.jpg", caption: { en: "Lively Harvard Square shops & cafés", zh: "热闹的哈佛广场商店与咖啡馆" } },
+        { emoji: "🛍️", img: "harvard-square.jpg", link: "https://www.harvard.edu/visit/",
+          caption: { en: "1. Harvard Square & the Coop", zh: "1. 哈佛广场与合作社书店" },
+          desc: { en: "The lively heart of Cambridge, full of bookshops, cafés, and street life — and where you park. Good lunch options here.", zh: "剑桥市热闹的中心，书店、咖啡馆和街头风情云集——也是停车的地方，午餐选择很多。" } },
+        { emoji: "🚪", img: "harvard-johnstongate.jpg", link: "https://map.harvard.edu/",
+          caption: { en: "2. Johnston Gate", zh: "2. 约翰斯顿校门" },
+          desc: { en: "The grand main gate into Harvard Yard (1889). By tradition, freshmen walk through it when they arrive and seniors when they graduate.", zh: "通往哈佛园的宏伟正门（1889年）。按传统，新生入学时由此门走入，毕业时再由此门走出。" } },
+        { emoji: "🗽", img: "harvard-statue.jpg", link: "https://www.harvard.edu/visit/",
+          caption: { en: "3. John Harvard Statue & Old Yard", zh: "3. 约翰·哈佛雕像与老校园" },
+          desc: { en: "The famous statue in front of University Hall. Visitors rub its shoe for luck — locals call it the 'Statue of Three Lies.'", zh: "矗立在大学楼前的著名雕像。游客会摸它的鞋子求好运——当地人戏称它为“三谎雕像”。" } },
+        { emoji: "⛪", img: "harvard-church.jpg", link: "https://memorialchurch.harvard.edu/",
+          caption: { en: "4. Memorial Church", zh: "4. 纪念教堂" },
+          desc: { en: "A graceful white-steepled church facing Widener across Tercentenary Theatre, honoring Harvard's war dead. Step inside for a quiet moment.", zh: "一座白色尖顶的优雅教堂，隔着三百周年广场与怀德纳图书馆相望，以纪念哈佛阵亡者。可入内静坐片刻。" } },
+        { emoji: "📚", img: "harvard-widener.jpg", link: "https://library.harvard.edu/libraries/widener",
+          caption: { en: "5. Widener Library", zh: "5. 怀德纳图书馆" },
+          desc: { en: "The vast, columned centerpiece of Harvard Library — the largest academic library in the world. Admire the grand front steps.", zh: "哈佛图书馆系统的恢宏核心，列柱巍峨，是全球最大的大学图书馆。不妨欣赏其宏伟的正门台阶。" } },
+        { emoji: "🖼️", img: "harvard-artmuseums.jpg", link: "https://harvardartmuseums.org/",
+          caption: { en: "6. Harvard Art Museums", zh: "6. 哈佛艺术博物馆" },
+          desc: { en: "Three museums under one roof (renovated by Renzo Piano), with art from Monet to Mark Rothko. Admission is now free for all.", zh: "三座博物馆同处一馆（由伦佐·皮亚诺翻新），藏品从莫奈到罗斯科。现已对所有人免费开放。" } },
+        { emoji: "🏰", img: "harvard-memhall.jpg", link: "https://memorialhall.harvard.edu/",
+          caption: { en: "7. Memorial Hall", zh: "7. 纪念厅" },
+          desc: { en: "A soaring Victorian Gothic 'cathedral' (1878) honoring Harvard's Civil War dead, housing the grand Sanders Theatre. Worth a look inside.", zh: "一座高耸的维多利亚哥特式“大教堂”（1878年），纪念南北战争中的哈佛阵亡者，内设宏伟的桑德斯剧院。值得入内一看。" } },
+        { emoji: "🦕", img: "harvard-mnh.jpg", link: "https://hmnh.harvard.edu/",
+          caption: { en: "8. Museum of Natural History (optional)", zh: "8. 自然历史博物馆（可选）" },
+          desc: { en: "Home of the world-famous Glass Flowers — 4,000 lifelike glass plant models — plus dinosaurs and gems. Indoor and a short walk north.", zh: "举世闻名的“玻璃花”所在地——4000件栩栩如生的玻璃植物模型，还有恐龙与宝石。室内参观，向北步行不远即到。" } },
       ],
     },
     mit: {
@@ -351,10 +431,88 @@ const TRIP = {
       },
       coords: [42.3592, -71.0920],
       mapQuery: "MIT Great Dome Killian Court, Cambridge MA",
+      links: [
+        { label: { en: "Searchable campus map", zh: "校园地图（可搜索）" }, url: "https://whereis.mit.edu/" },
+        { label: { en: "Parking: MIT Visitor Lot", zh: "停车：MIT 访客停车场" }, url: "https://maps.apple.com/?q=MIT%20Visitor%20Parking%20139%20Massachusetts%20Ave%20Cambridge&ll=42.3585,-71.0958" },
+      ],
+      tour: {
+        en: "Drive about 10 minutes from Harvard and park at the MIT Visitor Lot (139 Massachusetts Ave) on the west edge of campus (MIT suggests the Red Line if traffic is heavy). See Saarinen's sweeping Kresge Auditorium and the round MIT Chapel, cross Mass Ave to the grand Lobby 7 entrance, and walk the famous Infinite Corridor to Killian Court and the Great Dome. Step out to the Charles River for the Boston skyline, then north to Frank Gehry's tilting Stata Center. The hands-on MIT Museum near Kendall Square is an optional indoor finish.",
+        zh: "从哈佛开车约10分钟，把车停在校园西缘的 MIT 访客停车场（139 Massachusetts Ave）（若交通拥堵，MIT 建议改乘红线地铁）。先看沙里宁设计、屋顶舒展的克雷斯吉礼堂和圆形的 MIT 小教堂，穿过 Mass Ave 到宏伟的七号大堂入口，再沿著名的“无限长廊”走到基利安庭院和大圆顶。走到查尔斯河边欣赏波士顿天际线，然后向北去看弗兰克·盖里设计、歪斜俏皮的斯塔塔中心。肯德尔广场附近可动手体验的 MIT 博物馆，可作为室内收尾的可选项目。",
+      },
+      tourMapSvg: `<svg viewBox="0 0 360 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="MIT walking tour map" font-family="-apple-system,Helvetica,Arial,sans-serif">
+  <rect x="0" y="0" width="360" height="480" fill="#f4f1ea"/>
+  <rect x="0" y="412" width="360" height="68" fill="#cfe0ea"/>
+  <rect x="160" y="300" width="106" height="85" rx="3" fill="#dfe8d8" stroke="#cdddc2"/>
+  <g stroke="#d4ccba" stroke-width="7" stroke-linecap="round">
+    <line x1="108" y1="120" x2="88" y2="405"/>
+    <line x1="0" y1="405" x2="360" y2="405"/>
+    <line x1="150" y1="150" x2="330" y2="150"/>
+  </g>
+  <g font-size="10.5" fill="#8a8270">
+    <text x="58" y="270" transform="rotate(-78 58,270)">Mass Ave</text>
+    <text x="280" y="400">Memorial Dr</text>
+    <text x="262" y="145">Vassar St</text>
+  </g>
+  <g font-size="11" text-anchor="middle">
+    <text class="i18n-en" x="213" y="346" fill="#7a8a6a">Killian Court</text>
+    <text class="i18n-zh" x="213" y="346" fill="#7a8a6a">基利安庭院</text>
+    <text class="i18n-en" x="300" y="452" fill="#5b7d96">Charles River</text>
+    <text class="i18n-zh" x="300" y="452" fill="#5b7d96">查尔斯河</text>
+  </g>
+  <path d="M76,200 L48,248 L110,250 L172,255 L212,320 L212,390 L300,150 L76,200" fill="none" stroke="#0b4f6c" stroke-width="7" stroke-opacity="0.4" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M300,150 L333,222" fill="none" stroke="#8a8270" stroke-width="4" stroke-dasharray="2 6" stroke-linecap="round"/>
+  <g text-anchor="middle" font-size="14" font-weight="700" fill="#fff">
+    <circle cx="48" cy="248" r="13" fill="#c8102e" stroke="#fff" stroke-width="2.5"/><text x="48" y="253">1</text>
+    <circle cx="110" cy="250" r="13" fill="#c8102e" stroke="#fff" stroke-width="2.5"/><text x="110" y="255">2</text>
+    <circle cx="172" cy="255" r="13" fill="#c8102e" stroke="#fff" stroke-width="2.5"/><text x="172" y="260">3</text>
+    <circle cx="212" cy="320" r="13" fill="#c8102e" stroke="#fff" stroke-width="2.5"/><text x="212" y="325">4</text>
+    <circle cx="212" cy="390" r="13" fill="#c8102e" stroke="#fff" stroke-width="2.5"/><text x="212" y="395">5</text>
+    <circle cx="300" cy="150" r="13" fill="#c8102e" stroke="#fff" stroke-width="2.5"/><text x="300" y="155">6</text>
+    <circle cx="333" cy="222" r="13" fill="#6b7280" stroke="#fff" stroke-width="2.5"/><text x="333" y="227">7</text>
+  </g>
+  <rect x="63" y="182" width="26" height="26" rx="5" fill="#11697f" stroke="#fff" stroke-width="2.5"/>
+  <text x="76" y="201" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">P</text>
+  <g text-anchor="middle" font-size="10">
+    <text class="i18n-en" x="333" y="248" fill="#6b7280">MIT Museum</text>
+    <text class="i18n-zh" x="333" y="248" fill="#6b7280">MIT 博物馆</text>
+    <text class="i18n-en" x="76" y="174" fill="#11697f">MIT Visitor Lot</text>
+    <text class="i18n-zh" x="76" y="174" fill="#11697f">MIT 访客停车场</text>
+  </g>
+  <g><line x1="28" y1="55" x2="28" y2="36" stroke="#5a6776" stroke-width="2"/><path d="M28,32 L24,41 L32,41 Z" fill="#5a6776"/><text x="28" y="70" text-anchor="middle" font-size="11" fill="#5a6776">N</text></g>
+  <g font-size="11" fill="#5a6776">
+    <line x1="30" y1="432" x2="58" y2="432" stroke="#0b4f6c" stroke-width="6" stroke-opacity="0.5" stroke-linecap="round"/>
+    <text class="i18n-en" x="64" y="436">Walking loop (under 1 mile)</text>
+    <text class="i18n-zh" x="64" y="436">步行环线（不到1英里）</text>
+    <line x1="30" y1="454" x2="58" y2="454" stroke="#8a8270" stroke-width="4" stroke-dasharray="2 6"/>
+    <text class="i18n-en" x="64" y="458">Optional to ⑦ MIT Museum</text>
+    <text class="i18n-zh" x="64" y="458">可选前往⑦ MIT 博物馆</text>
+    <rect x="30" y="468" width="15" height="15" rx="3" fill="#11697f"/><text x="37.5" y="480" text-anchor="middle" font-size="10.5" font-weight="700" fill="#fff">P</text>
+    <text class="i18n-en" x="52" y="480">Parking — start &amp; end</text>
+    <text class="i18n-zh" x="52" y="480">停车场 — 起点与终点</text>
+  </g>
+</svg>`,
       mustSee: [
-        { emoji: "🏛️", img: "mit-dome.jpg", caption: { en: "The Great Dome over Killian Court", zh: "基利安庭院上的大圆顶" } },
-        { emoji: "🌀", img: "mit-stata.jpg", caption: { en: "Gehry's playful Stata Center", zh: "盖里设计的俏皮斯塔塔中心" } },
-        { emoji: "🌊", img: "mit-river.jpg", caption: { en: "Boston skyline across the Charles River", zh: "隔查尔斯河远眺波士顿天际线" } },
+        { emoji: "⛪", img: "mit-kresge.jpg", link: "https://whereis.mit.edu/",
+          caption: { en: "1. Kresge Auditorium & MIT Chapel", zh: "1. 克雷斯吉礼堂与 MIT 小教堂" },
+          desc: { en: "Two 1955 landmarks by architect Eero Saarinen: an auditorium under a sweeping thin-shell roof, and a serene round brick chapel.", zh: "建筑师埃罗·沙里宁1955年的两座地标：屋顶舒展轻盈的礼堂，以及静谧的圆形砖砌小教堂。" } },
+        { emoji: "🏛️", img: "mit-lobby7.jpg", link: "https://www.mit.edu/visitmit/",
+          caption: { en: "2. Lobby 7 (77 Mass Ave)", zh: "2. 七号大堂（77 Mass Ave）" },
+          desc: { en: "MIT's grand 'front door' on Massachusetts Avenue — a columned entrance and domed rotunda that opens onto the Infinite Corridor.", zh: "MIT 在马萨诸塞大道上宏伟的“正门”——列柱入口与圆顶大厅，由此通向“无限长廊”。" } },
+        { emoji: "📏", img: "mit-corridor.jpg", link: "https://whereis.mit.edu/",
+          caption: { en: "3. The Infinite Corridor", zh: "3. 无限长廊" },
+          desc: { en: "A famous 250-metre straight hallway running through the main buildings. Twice a year the sun lines up down its length ('MIThenge').", zh: "一条贯穿主楼群、长约250米的笔直走廊，十分有名。每年两次，落日会沿走廊方向正对成线（“MIT 日落奇景”）。" } },
+        { emoji: "🏛️", img: "mit-dome.jpg", link: "https://www.mit.edu/visitmit/",
+          caption: { en: "4. Killian Court & the Great Dome", zh: "4. 基利安庭院与大圆顶" },
+          desc: { en: "The classic open lawn framing the domed Maclaurin Building — MIT's signature view, and where graduation is held each spring.", zh: "经典的开阔草坪正对圆顶的麦克劳林主楼——MIT 的标志性景观，也是每年春季毕业典礼的举办地。" } },
+        { emoji: "🌊", img: "mit-river.jpg", link: "https://www.mit.edu/visitmit/",
+          caption: { en: "5. Charles River skyline view", zh: "5. 查尔斯河天际线" },
+          desc: { en: "Just south of Killian Court, the riverbank gives the best photo of the Boston skyline across the water — with benches to rest.", zh: "就在基利安庭院南侧，河岸是隔水拍摄波士顿天际线的最佳地点，还有长椅可供休息。" } },
+        { emoji: "🌀", img: "mit-stata.jpg", link: "https://whereis.mit.edu/",
+          caption: { en: "6. Stata Center", zh: "6. 斯塔塔中心" },
+          desc: { en: "Frank Gehry's playful, tilting, brightly-colored building (2004), home to computer science and AI labs. Like nothing else on campus.", zh: "弗兰克·盖里设计、歪斜俏皮、色彩明快的建筑（2004年），是计算机科学与人工智能实验室的所在地，与校园其他建筑迥然不同。" } },
+        { emoji: "🤖", img: "mit-museum.jpg", link: "https://mitmuseum.mit.edu/",
+          caption: { en: "7. MIT Museum (optional)", zh: "7. MIT 博物馆（可选）" },
+          desc: { en: "A hands-on museum near Kendall Square with robots, holograms, and clever inventions — a fun, indoor way to end the visit.", zh: "肯德尔广场附近一座可动手体验的博物馆，有机器人、全息影像和各种巧妙发明——是室内收尾的有趣之选。" } },
       ],
     },
 

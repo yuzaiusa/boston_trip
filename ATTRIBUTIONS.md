@@ -16,11 +16,19 @@ All images below are from [Wikimedia Commons](https://commons.wikimedia.org) and
 | `garden-ducklings.jpg` | [Make Way for Ducklings in winter.jpg](https://commons.wikimedia.org/wiki/File:Make_Way_for_Ducklings_in_winter.jpg) | Numbered | CC BY-SA 4.0 |
 | `garden-flowers.jpg` | [Boston Public Garden May 2018 003.jpg](https://commons.wikimedia.org/wiki/File:Boston_Public_Garden_May_2018_003.jpg) | King of Hearts | CC BY-SA 4.0 |
 | `garden-swanboat.jpg` | [Boston Public Garden May 2018 002.jpg](https://commons.wikimedia.org/wiki/File:Boston_Public_Garden_May_2018_002.jpg) | King of Hearts | CC BY-SA 4.0 |
+| `harvard-artmuseums.jpg` | [HarvardArtsMuseums.jpg](https://commons.wikimedia.org/wiki/File:HarvardArtsMuseums.jpg) | JanManu | CC BY-SA 4.0 |
 | `harvard-church.jpg` | [Memorial Church, Harvard Campus, Cambridge, Mass](https://commons.wikimedia.org/wiki/File:Memorial_Church,_Harvard_Campus,_Cambridge,_Massachusetts.jpg) | Rizka | CC BY-SA 4.0 |
+| `harvard-johnstongate.jpg` | [Johnston Gate (Harvard Yard) - IMG 8974.JPG](https://commons.wikimedia.org/wiki/File:Johnston_Gate_(Harvard_Yard)_-_IMG_8974.JPG) | Daderot | Public domain |
+| `harvard-memhall.jpg` | [Memorial Hall (Harvard University) - facade view](https://commons.wikimedia.org/wiki/File:Memorial_Hall_(Harvard_University)_-_facade_view.JPG) | Daderot. | CC BY-SA 3.0 |
+| `harvard-mnh.jpg` | [Harvard Museum of Natural History 050227.jpg](https://commons.wikimedia.org/wiki/File:Harvard_Museum_of_Natural_History_050227.jpg) | Unknown | CC BY-SA 2.0 |
 | `harvard-square.jpg` | [Harvard Square in Cambridge, Massachusetts.jpg](https://commons.wikimedia.org/wiki/File:Harvard_Square_in_Cambridge,_Massachusetts.jpg) | (User:Wgreaves) | CC BY-SA 4.0 |
 | `harvard-statue.jpg` | [John Harvard statue.jpg](https://commons.wikimedia.org/wiki/File:John_Harvard_statue.jpg) | alainedouard | CC BY-SA 3.0 |
 | `harvard-widener.jpg` | [HarvardUniversity WidenerLibrary 1920 withArtill](https://commons.wikimedia.org/wiki/File:HarvardUniversity_WidenerLibrary_1920_withArtilleryPiece.jpg) | Abdalian, Leon H. | Public domain |
+| `mit-corridor.jpg` | [MIT infinite corridor 02.jpg](https://commons.wikimedia.org/wiki/File:MIT_infinite_corridor_02.jpg) | Peacearth | CC BY-SA 4.0 |
 | `mit-dome.jpg` | [Great dome of MIT, Feb 2021.jpg](https://commons.wikimedia.org/wiki/File:Great_dome_of_MIT,_Feb_2021.jpg) | Peacearth | CC BY-SA 4.0 |
+| `mit-kresge.jpg` | [Kresge Auditorium, MIT (roof detail).JPG](https://commons.wikimedia.org/wiki/File:Kresge_Auditorium,_MIT_(roof_detail).JPG) | The original uploader was Daderot at English Wikipedia. | CC BY-SA 3.0 |
+| `mit-lobby7.jpg` | [2017 Rogers Building (MIT Building 7), 77 Massac](https://commons.wikimedia.org/wiki/File:2017_Rogers_Building_(MIT_Building_7),_77_Massachusetts_Avenue,_Cambridge,_Massachusetts.jpg) | Beyond My Ken | CC BY-SA 4.0 |
+| `mit-museum.jpg` | [MIT Museum, Cambridge MA.jpg](https://commons.wikimedia.org/wiki/File:MIT_Museum,_Cambridge_MA.jpg) | John Phelan | CC BY 3.0 |
 | `mit-river.jpg` | [Charles River Esplanade Boston May 2018 panorama](https://commons.wikimedia.org/wiki/File:Charles_River_Esplanade_Boston_May_2018_panorama.jpg) | King of Hearts | CC BY-SA 4.0 |
 | `mit-stata.jpg` | [Stata Center (05689p)2.jpg](https://commons.wikimedia.org/wiki/File:Stata_Center_(05689p)2.jpg) | Rhododendrites | CC BY-SA 4.0 |
 | `northend-cannoli.jpg` | [Cannoli in a box.jpg](https://commons.wikimedia.org/wiki/File:Cannoli_in_a_box.jpg) | Quinn Dombrowski from Berkeley, USA | CC BY-SA 2.0 |
