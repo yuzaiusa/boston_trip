@@ -26,6 +26,11 @@ const I18N = {
     photoSoon: "Photo coming soon",
     tourTitle: "Suggested walking tour",
     website: "Website",
+    listen: "Listen",
+    pause: "Pause",
+    readMore: "Read more",
+    showLess: "Show less",
+    source: "Source: Wikipedia",
     langName: "中文",
   },
   zh: {
@@ -49,6 +54,11 @@ const I18N = {
     photoSoon: "照片待补充",
     tourTitle: "建议步行路线",
     website: "官网",
+    listen: "朗读",
+    pause: "暂停",
+    readMore: "展开全文",
+    showLess: "收起",
+    source: "资料来源：维基百科",
     langName: "EN",
   },
 };
@@ -134,9 +144,10 @@ const TRIP = {
         zh: "耶鲁大学创立于1701年，是美国最古老的大学之一。老校区（Old Campus）是一片平坦、绿树成荫的四方庭院，非常适合午餐前轻松散步。",
       },
       story: {
-        en: "Yale has educated five U.S. presidents and countless world leaders. Its Gothic stone towers and ivy walls feel like a film set. Nearby Wooster Street is the birthplace of New Haven-style coal-fired 'apizza' — a local legend since the 1920s.",
-        zh: "耶鲁培养了五位美国总统和无数世界领袖。哥特式的石塔与爬满常春藤的墙壁宛如电影场景。附近的伍斯特街（Wooster Street）是纽黑文煤炉披萨（apizza）的发源地，自1920年代起便是当地传奇。",
+        en: "Yale University is a private Ivy League research university in New Haven, Connecticut. Founded in 1701, it is the third-oldest university in the United States and one of the nine colonial colleges chartered before the American Revolution.\n\nIt began as the Collegiate School, started by Congregationalist clergy and focused at first on theology and classical languages. Over time the curriculum widened to the humanities and sciences; Yale awarded the first PhD in the United States in 1861 and reorganized as a university in 1887.\n\nToday Yale is made up of fifteen schools, from the original undergraduate college to its famous law school. Its library holds more than 15 million volumes — the third-largest academic library in the country — and the downtown campus is known for striking Collegiate Gothic stone architecture.\n\nYale's graduates include five U.S. presidents, many U.S. Supreme Court justices, and dozens of Nobel laureates, along with heads of state, writers, and Olympic medalists from around the world.",
+        zh: "耶鲁大学是一所位于康涅狄格州纽黑文的私立常春藤盟校研究型大学。它创立于1701年，是美国历史第三悠久的大学，也是独立战争前获特许设立的九所殖民地学院之一。\n\n耶鲁最初名为“学院学校”（Collegiate School），由公理会的牧师创办，起初以神学和古典语言为主。随着时间推移，课程逐渐扩展到人文与自然科学；1861年，耶鲁授予了全美第一个博士学位，并于1887年正式改组为大学。\n\n如今的耶鲁由十五所学院组成，从最初的本科学院到著名的法学院。其图书馆藏书超过1500万册，是全美第三大的大学图书馆；市中心校园以宏伟的哥特复兴式石砌建筑闻名。\n\n耶鲁的毕业生中有五位美国总统、多位美国最高法院大法官，以及数十位诺贝尔奖得主，还有来自世界各地的国家元首、作家和奥运奖牌得主。",
       },
+      storySrc: "https://en.wikipedia.org/wiki/Yale_University",
       walk: { en: "Short & flat (~15 min on Old Campus).", zh: "短而平坦（老校区约15分钟）。" },
       hours: { en: "Campus open daily; pizza spots open ~11am.", zh: "校园全天开放；披萨店约上午11点开门。" },
       tips: {
@@ -296,9 +307,10 @@ const TRIP = {
         zh: "哈佛创立于1636年，是美国历史最悠久的大学。哈佛园（Harvard Yard）是一片平坦、绿荫遮蔽的草地，处处有长椅——散步轻松又惬意。",
       },
       story: {
-        en: "Touching the shoe of the John Harvard statue is said to bring good luck (locals call it the 'Statue of Three Lies'). Widener Library holds over 3 million volumes. Eight U.S. presidents studied here.",
-        zh: "据说摸一摸约翰·哈佛雕像的鞋子会带来好运（当地人戏称它为“三谎雕像”）。怀德纳图书馆藏书超过300万册。这里走出了八位美国总统。",
+        en: "Harvard University is a private Ivy League research university in Cambridge, Massachusetts. Founded in 1636 and named for its first benefactor, the clergyman John Harvard, it is the oldest institution of higher learning in the United States.\n\nFor its first century Harvard mainly trained Congregational clergy, but its studies gradually became secular. After the Civil War, during the long presidency of Charles W. Eliot (1869–1909), it added professional schools and grew into a modern research university.\n\nThe main campus, centered on Harvard Yard, covers about 209 acres, with further campuses across the Charles River in Allston and in the Longwood medical area. Harvard Library, with more than 20 million volumes, is the largest academic library in the world.\n\nIts alumni and faculty include eight U.S. presidents, dozens of heads of state, and many Nobel laureates — and collectively scores of Olympic medals and Academy Awards. A local custom is to rub the shoe of the John Harvard statue for luck.",
+        zh: "哈佛大学是一所位于马萨诸塞州剑桥市的私立常春藤盟校研究型大学。它创立于1636年，以首位捐助者、牧师约翰·哈佛之名命名，是美国历史最悠久的高等学府。\n\n在最初的一个世纪里，哈佛主要培养公理会的牧师，之后学业逐渐世俗化。南北战争之后，在校长查尔斯·W·埃利奥特的长期任内（1869–1909），哈佛增设了多所专业学院，发展为一所现代研究型大学。\n\n以哈佛园为核心的主校区占地约209英亩，此外在查尔斯河对岸的奥尔斯顿以及朗伍德医疗区还设有校区。哈佛图书馆藏书超过2000万册，是全球最大的大学图书馆。\n\n哈佛的校友与教职员中有八位美国总统、数十位国家元首和众多诺贝尔奖得主，并累计获得众多奥运奖牌和奥斯卡奖。当地有个习俗：摸一摸约翰·哈佛雕像的鞋子以求好运。",
       },
+      storySrc: "https://en.wikipedia.org/wiki/Harvard_University",
       walk: { en: "Easy & flat (~1 mile, with rests).", zh: "轻松平坦（约1英里，可随时休息）。" },
       hours: { en: "Yard open daily; shops & cafés all day.", zh: "校园全天开放；商店与咖啡馆全天营业。" },
       tips: {
@@ -327,9 +339,10 @@ const TRIP = {
         zh: "麻省理工学院（MIT）是全球顶尖的理工学府之一。基利安庭院（Killian Court）正对宏伟的大圆顶，并向查尔斯河敞开，可饱览波士顿的天际线。",
       },
       story: {
-        en: "MIT has produced more than 100 Nobel laureates. Its campus mixes a classical domed centerpiece with wildly modern buildings — like Frank Gehry's tilting, playful Stata Center.",
-        zh: "MIT 培养了超过100位诺贝尔奖得主。校园将古典的圆顶主楼与极具未来感的建筑融为一体——例如弗兰克·盖里设计、歪斜俏皮的斯塔塔中心（Stata Center）。",
+        en: "The Massachusetts Institute of Technology (MIT) is a private research university in Cambridge, Massachusetts. Founded in 1861 to advance 'useful knowledge,' it has helped shape countless fields of science and technology.\n\nIts founder, William Barton Rogers, modeled MIT on the European polytechnic, stressing hands-on laboratory work in applied science and engineering. The school moved from Boston to its present campus along the Charles River in 1916.\n\nMIT's rise as a great research center began in World War II, when wartime laboratories made it a national leader. Since then it has been central to computing, artificial intelligence, biotechnology, and space exploration, including the Apollo guidance computer.\n\nMore than 100 Nobel laureates have been connected with MIT, and its graduates have founded many of the world's best-known technology companies. Campus life is also famous for inventive student 'hacks' — elaborate, good-natured pranks.",
+        zh: "麻省理工学院（MIT）是一所位于马萨诸塞州剑桥市的私立研究型大学。它创立于1861年，宗旨是推进“有用的知识”，并深刻塑造了无数科学与技术领域。\n\n创办人威廉·巴顿·罗杰斯以欧洲理工学院为蓝本，强调应用科学与工程中的动手实验。1916年，学校从波士顿迁至如今坐落于查尔斯河畔的校区。\n\nMIT 作为顶尖研究中心的崛起始于第二次世界大战，当时的战时实验室使其成为全国的领军者。此后，它在计算机、人工智能、生物技术和太空探索（包括阿波罗导航计算机）等领域始终居于核心地位。\n\n与 MIT 有渊源的诺贝尔奖得主超过100位，其毕业生创办了许多世界知名的科技公司。校园生活也以富有创意的学生“恶作剧”（hacks）——精心设计、善意有趣——而闻名。",
       },
+      storySrc: "https://en.wikipedia.org/wiki/Massachusetts_Institute_of_Technology",
       walk: { en: "Short & flat; benches by the river.", zh: "短而平坦；河边设有长椅。" },
       hours: { en: "Campus & riverside open daily.", zh: "校园与河畔全天开放。" },
       tips: {
@@ -359,9 +372,10 @@ const TRIP = {
         zh: "波士顿公共花园（建于1837年）是一座浪漫的维多利亚式花园，垂柳、花圃与小湖相映成趣。可乘坐的脚踏式天鹅船自1877年起便在湖上轻轻滑行至今。",
       },
       story: {
-        en: "The garden's bronze 'Make Way for Ducklings' statues honor a beloved children's book and are a favorite photo stop. The Swan Boats are a 4th-generation family tradition — a calm, 15-minute ride.",
-        zh: "花园里的青铜雕塑《让路给小鸭子》取材于一本深受喜爱的童书，是热门拍照点。天鹅船由同一家族经营至第四代——是一段宁静的15分钟航程。",
+        en: "The Boston Public Garden, next to Boston Common in the heart of the city, was the first public botanical garden in America, established in 1837. It forms part of Boston's 'Emerald Necklace' chain of parks.\n\nLaid out in the Victorian style, it is famous for its formal flower beds, weeping willows, and a small lagoon crossed by a miniature suspension bridge. Since 1877 the beloved, foot-pedaled Swan Boats have glided across the water — still run by the same family today.\n\nNear the Charles Street corner stand the bronze 'Make Way for Ducklings' statues, honoring Robert McCloskey's classic children's book and a favorite photo stop for families.",
+        zh: "波士顿公共花园紧邻波士顿公园（Boston Common），坐落于城市中心，建于1837年，是美国第一座公共植物园，也是波士顿“翡翠项链”公园链的一部分。\n\n花园以维多利亚风格布置，以规整的花圃、垂柳和一座由微型吊桥横跨的小湖而闻名。自1877年起，深受喜爱的脚踏式天鹅船便在湖面上轻轻滑行，至今仍由同一家族经营。\n\n在查尔斯街一角矗立着青铜雕塑《让路给小鸭子》，取材于罗伯特·麦克洛斯基的经典童书，是家庭游客最爱的拍照点。",
       },
+      storySrc: "https://en.wikipedia.org/wiki/Boston_Public_Garden",
       walk: { en: "Very gentle; flat paths & lots of benches.", zh: "非常轻松；小径平坦，长椅众多。" },
       hours: { en: "Swan Boats daily 10am–5pm (late June).", zh: "天鹅船每日10:00–17:00（六月下旬）。" },
       tips: {
@@ -389,9 +403,10 @@ const TRIP = {
         zh: "搭乘二战风格的水陆两栖车，全程舒适落座、轻松有趣。车辆在风趣导览员的讲解下驶过城市地标，随后直接开进查尔斯河，平稳地进行一段水上巡游。",
       },
       story: {
-        en: "The 'ducks' are a Boston institution since 1994 and a favorite for visitors who want to see everything without walking. The moment it drives into the river always gets a cheer.",
-        zh: "“鸭子船”自1994年起就是波士顿的招牌项目，深受不愿多走路又想饱览全城的游客喜爱。车辆开进河中的那一刻总会引来欢呼。",
+        en: "Boston Duck Tours is a sightseeing company that has carried visitors around the city since 1994 aboard replica World War II amphibious vehicles called 'DUKWs,' or simply 'ducks.'\n\nEach roughly 80-minute tour rolls past Boston's landmarks with a lively 'ConDUCKtor,' then drives straight down a ramp into the Charles River for a smooth cruise on the water — the splash-in is always a crowd favorite.\n\nThe ducks depart from three points around the city: the Prudential Center, the Museum of Science, and the New England Aquarium. It's a fun way to see a lot of Boston with no walking at all.",
+        zh: "波士顿鸭子船游览是一家观光公司，自1994年起便用二战时期的水陆两栖车（称为 DUKW，俗称“鸭子船”）的复刻车辆载着游客畅游全城。\n\n每趟约80分钟的行程由风趣的“鸭长”（ConDUCKtor）讲解，驶过波士顿的各处地标，随后沿坡道直接开进查尔斯河，平稳地巡游水面——“扑通”入水的一刻总是最受欢迎。\n\n鸭子船从城中三处出发：保诚中心、科学博物馆和新英格兰水族馆。这是一种无需步行就能饱览波士顿的有趣方式。",
       },
+      storySrc: "https://en.wikipedia.org/wiki/Boston_Duck_Tours",
       walk: { en: "Zero walking — fully seated.", zh: "完全无需步行——全程坐着。" },
       hours: { en: "Departs hourly/half-hourly, 9am–dusk.", zh: "每小时或每半小时一班，9:00至黄昏。" },
       tips: {
@@ -419,9 +434,10 @@ const TRIP = {
         zh: "自由之路是一条长约2.5英里、串联16处独立战争史迹的路线。与其全程步行，不如乘坐随上随下的观光车，只在想看的站点下车——非常适合轻松的节奏。",
       },
       story: {
-        en: "Marked by a red line on the ground, the trail passes the gold-domed State House, old burying grounds, and Faneuil Hall — the 'Cradle of Liberty' where revolutionaries once gave fiery speeches.",
-        zh: "这条以地面红线标记的步道经过金顶州议会大厦、古老墓园以及法尼尔厅——被称为“自由的摇篮”，革命者曾在此慷慨陈词。",
+        en: "The Freedom Trail is a 2.5-mile (4 km) route through Boston that links 16 places important to the founding of the United States. Marked by a line on the ground, it runs from Boston Common to the Old North Church and on to the Bunker Hill Monument in Charlestown.\n\nAlong the way are meeting houses, old burying grounds, churches, historic buildings, and a naval frigate. Most sites are free; a few, such as the Old State House and the Paul Revere House, charge a small admission.\n\nThe trail was the idea of journalist William Schofield in 1951; the city soon made it real, and within a couple of years tens of thousands of people were walking it each year. A National Park Service visitor center in Faneuil Hall offers free maps and tours.",
+        zh: "自由之路是一条贯穿波士顿、长约2.5英里（4公里）的路线，串联起16处对美国建国具有重要意义的地点。它以地面上的标线为记，从波士顿公园一直延伸到北角的老北教堂，再到查尔斯顿的邦克山纪念碑。\n\n沿途有会堂、古老墓园、教堂、历史建筑，还有一艘海军护卫舰。大多数景点免费；少数几处，如旧州议会厅和保罗·里维尔故居，会收取少量门票。\n\n这条步道由记者威廉·斯科菲尔德于1951年提议；市政府很快将其付诸实施，几年之内每年便有数万人沿路漫步。法尼尔厅内设有国家公园管理局的访客中心，提供免费地图和导览。",
       },
+      storySrc: "https://en.wikipedia.org/wiki/Freedom_Trail",
       walk: { en: "Your choice — trolley between stops keeps it short.", zh: "步行多少随您——站点间乘车，走得很少。" },
       hours: { en: "Trolley runs through the day; market 10am–9pm.", zh: "观光车全天运营；市场10:00–21:00。" },
       tips: {
@@ -449,9 +465,10 @@ const TRIP = {
         zh: "如果体力允许，可作为加选项目。北角是波士顿最古老的街区，也是意大利人聚居区，遍布狭窄街巷、咖啡馆和糕点店。",
       },
       story: {
-        en: "Here stand the Paul Revere House (c.1680, the city's oldest building) and the Old North Church, where in 1775 two lanterns signaled 'the British are coming' — sparking Revere's famous midnight ride.",
-        zh: "这里坐落着保罗·里维尔故居（约1680年，全城最古老的建筑）和老北教堂——1775年，两盏灯笼在此发出“英军来了”的信号，引发了里维尔著名的午夜骑行。",
+        en: "The North End is Boston's oldest residential neighborhood, settled in the 1630s. Though it covers barely a third of a square mile, it is packed with history and with nearly a hundred shops, cafés, and restaurants.\n\nSince the early 20th century it has been the city's Italian quarter, famous for its Italian American community, narrow lanes, and food — from fresh pasta to the cannoli everyone lines up for.\n\nIt is also home to two Freedom Trail landmarks: the Paul Revere House (c. 1680, the city's oldest building) and the Old North Church, where in 1775 two lanterns signaled that the British were coming — sparking Revere's famous midnight ride.",
+        zh: "北角是波士顿最古老的居住区，早在1630年代便有人定居。它面积仅约三分之一平方英里，却充满历史，云集近百家商店、咖啡馆和餐厅。\n\n自20世纪初以来，这里一直是波士顿的意大利人聚居区，以意大利裔社区、狭窄的小巷和美食而闻名——从新鲜手工面食到人人排队的奶油卷（cannoli）。\n\n这里还坐落着自由之路上的两处地标：保罗·里维尔故居（约1680年，全城最古老的建筑）和老北教堂——1775年，两盏灯笼在此发出英军来袭的信号，引发了里维尔著名的午夜骑行。",
       },
+      storySrc: "https://en.wikipedia.org/wiki/North_End,_Boston",
       walk: { en: "Some narrow streets; go slow, the trolley stops nearby.", zh: "有些狭窄街巷；慢慢走，观光车在附近设站。" },
       hours: { en: "Cafés & bakeries open late.", zh: "咖啡馆与糕点店营业至深夜。" },
       tips: {
@@ -481,9 +498,10 @@ const TRIP = {
         zh: "波士顿唐人街是新英格兰地区唯一留存的历史华埠，也是全美最大的华埠之一——几个街区平坦好走，餐馆和糕点店林立。",
       },
       story: {
-        en: "The grand paifang Gate, a gift from Taiwan in 1982, marks the entrance. The neighborhood has been home to Chinese families since the late 1800s and is known for dim sum, roast meats and fresh seafood.",
-        zh: "宏伟的牌楼（paifang）是1982年来自台湾的礼物，标示着唐人街的入口。自1800年代末以来，这里便是华人家庭的家园，以点心、烧腊和新鲜海鲜闻名。",
+        en: "Boston's Chinatown, in the downtown core, is the only historic Chinese neighborhood still surviving in New England, after those in Providence and Portland faded in the 1950s. It is one of the largest Chinatowns outside New York City.\n\nDensely populated and lively, it is the center of East and Southeast Asian cultural life in the city, with an abundance of Chinese and Vietnamese restaurants, bakeries, and shops.\n\nA grand paifang gate — a gift related to Taiwan — marks the entrance, and the neighborhood borders Boston Common and the downtown theater district. It has been home to Chinese families since the late 1800s and is loved for dim sum, roast meats, and fresh seafood.",
+        zh: "波士顿唐人街位于市中心核心地带，是新英格兰地区唯一留存至今的历史华埠——普罗维登斯和波特兰的华埠在1950年代相继消失。它也是纽约市以外最大的唐人街之一。\n\n这里人口稠密、热闹非凡，是全城东亚与东南亚文化生活的中心，中餐馆、越南餐馆、糕点店和商铺林立。\n\n一座宏伟的牌楼（与台湾相关的赠礼）标示着入口，街区紧邻波士顿公园和市中心剧院区。自1800年代末以来，这里便是华人家庭的家园，以点心、烧腊和新鲜海鲜深受喜爱。",
       },
+      storySrc: "https://en.wikipedia.org/wiki/Chinatown,_Boston",
       walk: { en: "A few flat, easy blocks.", zh: "几个平坦好走的街区。" },
       hours: { en: "Restaurants open late morning onward.", zh: "餐馆从上午晚些时候起营业。" },
       tips: {

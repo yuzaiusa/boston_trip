@@ -24,6 +24,55 @@
     render();
   }
 
+  // ---- audio / text-to-speech ---------------------------------------------
+  var currentAudio = null; // the playing HTMLAudioElement
+
+  function stopAudio() {
+    if (currentAudio) {
+      try { currentAudio.pause(); } catch (e) {}
+      currentAudio = null;
+    }
+    try { if (window.speechSynthesis) window.speechSynthesis.cancel(); } catch (e) {}
+  }
+
+  // browser fallback if a pre-recorded MP3 is unavailable
+  function speak(text) {
+    try {
+      if (!window.speechSynthesis) return false;
+      var u = new SpeechSynthesisUtterance(text);
+      u.lang = lang === "zh" ? "zh-CN" : "en-US";
+      u.rate = 0.95;
+      window.speechSynthesis.cancel();
+      window.speechSynthesis.speak(u);
+      return true;
+    } catch (e) { return false; }
+  }
+
+  // a Listen/Pause button that plays assets/audio/<id>-<lang>.mp3 (Edge TTS),
+  // falling back to the browser's speech synthesis if the file is missing.
+  function ttsButton(id, story) {
+    var btn = el("button", { class: "tts-btn", type: "button" });
+    function setIdle() { btn.textContent = "🔊 " + t("listen"); btn.classList.remove("playing"); }
+    function setPlaying() { btn.textContent = "⏸ " + t("pause"); btn.classList.add("playing"); }
+    setIdle();
+    btn.addEventListener("click", function () {
+      if (currentAudio && !currentAudio.paused) { stopAudio(); setIdle(); return; }
+      stopAudio();
+      var a = new Audio("assets/audio/" + id + "-" + lang + ".mp3");
+      currentAudio = a;
+      a.addEventListener("ended", setIdle);
+      a.addEventListener("error", function () {
+        currentAudio = null;
+        speak(L(story)); // fallback
+      });
+      a.play().then(setPlaying).catch(function () {
+        currentAudio = null;
+        if (speak(L(story))) setPlaying();
+      });
+    });
+    return btn;
+  }
+
   // ---- small DOM helpers ---------------------------------------------------
   function el(tag, attrs, children) {
     var node = document.createElement(tag);
@@ -206,6 +255,45 @@
     ]);
   }
 
+  function paras(text) {
+    return String(text || "").split(/\n\n+/).map(function (p) { return p.trim(); }).filter(Boolean);
+  }
+
+  // Background-story block: title + Listen button, first paragraph visible,
+  // remaining paragraphs collapsed behind a "Read more" toggle, plus source.
+  function storyBlock(id, s) {
+    var sec = el("section", { class: "block story-block" }, [
+      el("div", { class: "block-head" }, [
+        el("h3", { text: t("story") }),
+        ttsButton(id, s.story),
+      ]),
+    ]);
+
+    var ps = paras(L(s.story));
+    sec.appendChild(el("p", { text: ps[0] || "" }));
+
+    if (ps.length > 1) {
+      var more = el("div", { class: "story-more" });
+      ps.slice(1).forEach(function (p) { more.appendChild(el("p", { text: p })); });
+      var toggle = el("button", { class: "more-btn", type: "button" });
+      function collapse() { more.classList.remove("open"); toggle.textContent = t("readMore") + " ▾"; }
+      function expand() { more.classList.add("open"); toggle.textContent = t("showLess") + " ▴"; }
+      collapse();
+      toggle.addEventListener("click", function () {
+        more.classList.contains("open") ? collapse() : expand();
+      });
+      sec.appendChild(more);
+      sec.appendChild(toggle);
+    }
+
+    if (s.storySrc)
+      sec.appendChild(
+        el("a", { class: "src-link", href: s.storySrc, target: "_blank", rel: "noopener" }, [t("source") + " ↗"])
+      );
+
+    return sec;
+  }
+
   function viewSite(id) {
     var s = TRIP.sites[id];
     if (!s) return viewHome();
@@ -248,13 +336,7 @@
         ])
       );
 
-    if (s.story)
-      wrap.appendChild(
-        el("section", { class: "block" }, [
-          el("h3", { text: t("story") }),
-          el("p", { text: L(s.story) }),
-        ])
-      );
+    if (s.story) wrap.appendChild(storyBlock(id, s));
 
     if (s.tour) {
       var tourPanel = el("section", { class: "panel tour" }, [
@@ -320,6 +402,7 @@
 
   // ---- router --------------------------------------------------------------
   function render() {
+    stopAudio(); // stop any narration when navigating or switching language
     var hash = location.hash.replace(/^#\/?/, ""); // e.g. "day/thu"
     var parts = hash.split("/").filter(Boolean);
     var root = document.getElementById("app");
