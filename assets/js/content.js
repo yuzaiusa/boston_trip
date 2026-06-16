@@ -147,14 +147,15 @@ const TRIP = {
       mapQuery: "Yale University Old Campus, New Haven CT",
       links: [
         { label: { en: "Searchable campus map", zh: "校园地图（可搜索）" }, url: "https://map.yale.edu/" },
+        { label: { en: "Parking: Chapel-York Garage", zh: "停车：Chapel-York 停车楼" }, url: "https://maps.apple.com/?q=Chapel-York%20Garage%20150%20York%20St%20New%20Haven&ll=41.3076,-72.9307" },
         { label: { en: "Places to visit (Yale)", zh: "校园参观指南（耶鲁官网）" }, url: "https://onha.yale.edu/vibrant-downtown/places-to-visit-on-campus" },
       ],
       tour: {
-        en: "All of the highlights below sit within a flat, compact half-mile of central campus — pick as many as your legs like. A natural order: enter Old Campus through Phelps Gate (across from the New Haven Green), walk north to Sterling Memorial Library and the glowing Beinecke, pause at the Schwarzman Center, then head south on Chapel Street to the two free art museums. The Peabody Museum is a short drive north. Finish with lunch on Wooster Street.",
-        zh: "下面的亮点都集中在校园中心、地势平坦、方圆约半英里之内——体力允许就多看几处。建议顺序：从面向纽黑文中心绿地的 Phelps Gate 走进老校区，向北前往斯特林纪念图书馆和通透发光的拜内克图书馆，在施瓦茨曼中心歇歇脚，再沿 Chapel 街向南到两座免费艺术博物馆。皮博迪博物馆在北面，开车几分钟即到。最后到伍斯特街吃午餐。",
+        en: "Park at the Chapel-York Garage (150 York St, about $20 all day) — it sits right beside the two art museums, so this flat walking loop begins and ends at your car. Pick as many stops as your legs like. From the garage, walk over to Phelps Gate and Old Campus, north to Sterling Memorial Library and the glowing Beinecke, pause at the Schwarzman Center, then back south to the two free art museums and the car. The Peabody Museum is then a short drive north. Finish with lunch on Wooster Street.",
+        zh: "把车停在 Chapel-York 停车楼（150 York St，全天约 $20）——它就在两座艺术博物馆旁边，因此这条平坦的步行环线从停车处出发、最后回到车上。体力允许就多看几处。从停车楼步行到 Phelps 校门和老校区，向北到斯特林纪念图书馆和通透发光的拜内克图书馆，在施瓦茨曼中心歇歇脚，再向南回到两座免费艺术博物馆和停车处。皮博迪博物馆在北面，开车几分钟即到。最后到伍斯特街吃午餐。",
       },
-      tourMapSvg: `<svg viewBox="0 0 360 470" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Yale walking tour map" font-family="-apple-system,Helvetica,Arial,sans-serif">
-  <rect x="0" y="0" width="360" height="470" fill="#f4f1ea"/>
+      tourMapSvg: `<svg viewBox="0 0 360 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Yale walking tour map" font-family="-apple-system,Helvetica,Arial,sans-serif">
+  <rect x="0" y="0" width="360" height="500" fill="#f4f1ea"/>
   <!-- blocks -->
   <rect x="232" y="217" width="88" height="128" rx="3" fill="#dfe8d8" stroke="#cdddc2"/>
   <rect x="142" y="217" width="88" height="128" rx="3" fill="#ece7d8" stroke="#ddd6c2"/>
@@ -184,12 +185,12 @@ const TRIP = {
     <text class="i18n-en" x="188" y="332" fill="#9a8f73">Old Campus</text>
     <text class="i18n-zh" x="188" y="332" fill="#9a8f73">老校区</text>
   </g>
-  <!-- walking route -->
-  <path d="M230,285 L185,270 L132,130 L182,116 L230,80 L150,210 L152,336 L118,353" fill="none" stroke="#0b4f6c" stroke-width="7" stroke-opacity="0.45" stroke-linejoin="round" stroke-linecap="round"/>
-  <!-- drive to Peabody -->
-  <path d="M230,80 L292,60 L318,52" fill="none" stroke="#8a8270" stroke-width="4" stroke-dasharray="2 6" stroke-linecap="round"/>
-  <g stroke="#8a8270" stroke-width="2"><line x1="258" y1="74" x2="266" y2="62"/><line x1="266" y1="76" x2="274" y2="64"/></g>
-  <!-- markers -->
+  <!-- walking loop: P -> 1 -> ... -> 7 -> P -->
+  <path d="M52,362 L230,285 L185,270 L132,130 L182,116 L230,80 L150,210 L152,336 L118,353 L52,362" fill="none" stroke="#0b4f6c" stroke-width="7" stroke-opacity="0.45" stroke-linejoin="round" stroke-linecap="round"/>
+  <!-- drive to Peabody (off-map, north-east) -->
+  <path d="M320,50 L344,32" fill="none" stroke="#8a8270" stroke-width="4" stroke-dasharray="2 6" stroke-linecap="round"/>
+  <path d="M349,28 L338,30 L342,39 Z" fill="#8a8270"/>
+  <!-- numbered markers -->
   <g text-anchor="middle" font-size="14" font-weight="700" fill="#fff">
     <circle cx="230" cy="285" r="13" fill="#c8102e" stroke="#fff" stroke-width="2.5"/><text x="230" y="290">1</text>
     <circle cx="185" cy="270" r="13" fill="#c8102e" stroke="#fff" stroke-width="2.5"/><text x="185" y="275">2</text>
@@ -200,20 +201,28 @@ const TRIP = {
     <circle cx="118" cy="353" r="13" fill="#c8102e" stroke="#fff" stroke-width="2.5"/><text x="118" y="358">7</text>
     <circle cx="320" cy="50" r="13" fill="#6b7280" stroke="#fff" stroke-width="2.5"/><text x="320" y="55">8</text>
   </g>
-  <g text-anchor="middle" font-size="10" fill="#6b7280">
-    <text class="i18n-en" x="320" y="76">Peabody &#8599;</text>
-    <text class="i18n-zh" x="320" y="76">皮博迪 &#8599;</text>
+  <!-- parking marker (start & end) -->
+  <rect x="39" y="349" width="26" height="26" rx="5" fill="#11697f" stroke="#fff" stroke-width="2.5"/>
+  <text x="52" y="368" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">P</text>
+  <g text-anchor="middle" font-size="10">
+    <text class="i18n-en" x="320" y="76" fill="#6b7280">Peabody &#8599;</text>
+    <text class="i18n-zh" x="320" y="76" fill="#6b7280">皮博迪 &#8599;</text>
+    <text class="i18n-en" x="56" y="390" fill="#11697f">Chapel-York Garage</text>
+    <text class="i18n-zh" x="56" y="390" fill="#11697f">Chapel-York 停车楼</text>
   </g>
   <!-- north arrow -->
   <g><line x1="28" y1="55" x2="28" y2="36" stroke="#5a6776" stroke-width="2"/><path d="M28,32 L24,41 L32,41 Z" fill="#5a6776"/><text x="28" y="70" text-anchor="middle" font-size="11" fill="#5a6776">N</text></g>
   <!-- legend -->
   <g font-size="11" fill="#5a6776">
-    <line x1="30" y1="425" x2="58" y2="425" stroke="#0b4f6c" stroke-width="6" stroke-opacity="0.5" stroke-linecap="round"/>
-    <text class="i18n-en" x="64" y="429">Walking route (about 0.5 mi)</text>
-    <text class="i18n-zh" x="64" y="429">步行路线（约0.5英里）</text>
-    <line x1="30" y1="448" x2="58" y2="448" stroke="#8a8270" stroke-width="4" stroke-dasharray="2 6"/>
-    <text class="i18n-en" x="64" y="452">Drive to &#9312;&#8201;Peabody (optional)</text>
-    <text class="i18n-zh" x="64" y="452">驾车前往⑧皮博迪（可选）</text>
+    <line x1="30" y1="418" x2="58" y2="418" stroke="#0b4f6c" stroke-width="6" stroke-opacity="0.5" stroke-linecap="round"/>
+    <text class="i18n-en" x="64" y="422">Walking loop (under 1 mile)</text>
+    <text class="i18n-zh" x="64" y="422">步行环线（不到1英里）</text>
+    <line x1="30" y1="444" x2="58" y2="444" stroke="#8a8270" stroke-width="4" stroke-dasharray="2 6"/>
+    <text class="i18n-en" x="64" y="448">Drive to ⑧ Peabody (optional)</text>
+    <text class="i18n-zh" x="64" y="448">驾车前往⑧皮博迪（可选）</text>
+    <rect x="30" y="462" width="16" height="16" rx="3" fill="#11697f"/><text x="38" y="474" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">P</text>
+    <text class="i18n-en" x="54" y="474">Parking — start &amp; end of the walk</text>
+    <text class="i18n-zh" x="54" y="474">停车场 — 步行起点与终点</text>
   </g>
 </svg>`,
       mustSee: [
