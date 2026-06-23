@@ -88,20 +88,6 @@ const TRIP = {
     {
       id: "thu",
       label: { en: "Thu · Jun 25", zh: "周四 · 6月25日" },
-      title: { en: "Harvard & MIT", zh: "哈佛与麻省理工" },
-      summary: {
-        en: "A relaxed day on two famous campuses. Easy, flat walking with plenty of benches. Lunch in Harvard Square; afternoon rest back at the hotel.",
-        zh: "在两所名校度过轻松的一天。路面平坦、长椅众多，步行轻松。在哈佛广场吃午餐，下午回酒店休息。",
-      },
-      transport: {
-        en: "Drive ~35–40 min and park near Harvard Square; MIT is a short 10-minute drive from Harvard.",
-        zh: "自驾约35–40分钟，在哈佛广场附近停车；从哈佛到麻省理工只需约10分钟车程。",
-      },
-      sites: ["harvard", "mit"],
-    },
-    {
-      id: "fri",
-      label: { en: "Fri · Jun 26", zh: "周五 · 6月26日" },
       title: { en: "Downtown Boston", zh: "波士顿市区" },
       summary: {
         en: "Gardens, water and history. Swan Boats in the Public Garden, an optional Duck Tour river cruise, and the Freedom Trail by hop-on/hop-off trolley.",
@@ -112,6 +98,20 @@ const TRIP = {
         zh: "两种方案（当天再定）：乘坐诺伍德通勤火车进城，或自驾在市区停车。两者说明见下。",
       },
       sites: ["public-garden", "duck-tour", "freedom-trail", "north-end"],
+    },
+    {
+      id: "fri",
+      label: { en: "Fri · Jun 26", zh: "周五 · 6月26日" },
+      title: { en: "Harvard & MIT", zh: "哈佛与麻省理工" },
+      summary: {
+        en: "A relaxed day on two famous campuses. Easy, flat walking with plenty of benches. Lunch in Harvard Square; afternoon rest back at the hotel.",
+        zh: "在两所名校度过轻松的一天。路面平坦、长椅众多，步行轻松。在哈佛广场吃午餐，下午回酒店休息。",
+      },
+      transport: {
+        en: "Drive ~35–40 min and park near Harvard Square; MIT is a short 10-minute drive from Harvard.",
+        zh: "自驾约35–40分钟，在哈佛广场附近停车；从哈佛到麻省理工只需约10分钟车程。",
+      },
+      sites: ["harvard", "mit"],
     },
     {
       id: "sat",
@@ -868,15 +868,15 @@ const TRIP = {
         mapQuery: "Hampton Inn Boston Norwood MA",
       },
       {
-        title: { en: "🚆 Friday Option A — Commuter Rail", zh: "🚆 周五方案A — 通勤火车" },
+        title: { en: "🚆 Thursday Option A — Commuter Rail", zh: "🚆 周四方案A — 通勤火车" },
         body: {
-          en: "Take the MBTA Franklin/Foxboro Line from Norwood Central or Norwood Depot to Back Bay or South Station (~30 min). Buy tickets on the mTicket app or onboard. Go mid-morning; to avoid post-match crowds, return before ~4:30pm or after ~7:30pm.",
-          zh: "乘坐 MBTA 富兰克林/福克斯堡线，从 Norwood Central 或 Norwood Depot 到 Back Bay 或 South Station（约30分钟）。可用 mTicket 手机应用或在车上购票。建议上午晚些出发；为避开赛后人潮，请在约16:30前或19:30后返回。",
+          en: "Take the MBTA Franklin/Foxboro Line from Norwood Central or Norwood Depot to Back Bay or South Station (~30 min). Buy tickets on the mTicket app or onboard. Go mid-morning and return at a relaxed pace.",
+          zh: "乘坐 MBTA 富兰克林/福克斯堡线，从 Norwood Central 或 Norwood Depot 到 Back Bay 或 South Station（约30分钟）。可用 mTicket 手机应用或在车上购票。建议上午晚些出发，回程从容安排即可。",
         },
         mapQuery: "Norwood Central Station MBTA",
       },
       {
-        title: { en: "🅿️ Friday Option B — Drive & Park", zh: "🅿️ 周五方案B — 自驾停车" },
+        title: { en: "🅿️ Thursday Option B — Drive & Park", zh: "🅿️ 周四方案B — 自驾停车" },
         body: {
           en: "Drive ~25–30 min downtown and park at Boston Common Garage (entrance on Charles St, under the Public Garden): about $30 up to 10 hours, $38 for 24 hours. Most central for starting at the Swan Boats.",
           zh: "驱车约25–30分钟到市区，在波士顿公园停车楼停车（入口在 Charles 街，位于公共花园下方）：10小时内约$30，24小时约$38。从天鹅船开始游览最为便利。",
@@ -886,8 +886,8 @@ const TRIP = {
       {
         title: { en: "⚽ World Cup Heads-up (Fri Jun 26)", zh: "⚽ 世界杯提醒（6月26日 周五）" },
         body: {
-          en: "Norway vs. France plays at 3pm at Gillette Stadium in Foxborough, ~12 miles south of the hotel. Downtown sightseeing is unaffected, but expect extra traffic and crowds near the hotel/highway from about 2–7:30pm. Plan around that window.",
-          zh: "挪威对法国的比赛于下午3点在福克斯堡的吉列体育场举行，距酒店以南约12英里。市区观光不受影响，但约14:00–19:30酒店附近及高速可能有额外车流和人群。请避开这个时段安排行程。",
+          en: "Norway vs. France plays at 3pm at Gillette Stadium in Foxborough, ~12 miles south of the hotel. The Harvard & MIT campuses are north of the city and unaffected, but expect extra traffic and crowds near the hotel/highway from about 2–7:30pm — time your drive back from Cambridge to arrive before or after that window.",
+          zh: "挪威对法国的比赛于下午3点在福克斯堡的吉列体育场举行，距酒店以南约12英里。哈佛与麻省理工校区位于城北，不受影响，但约14:00–19:30酒店附近及高速可能有额外车流和人群——请把从剑桥返回的车程安排在这个时段之前或之后抵达。",
         },
         mapQuery: "",
       },
