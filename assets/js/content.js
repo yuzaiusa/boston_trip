@@ -76,8 +76,8 @@ const TRIP = {
       label: { en: "Wed · Jun 24", zh: "周三 · 6月24日" },
       title: { en: "Drive Up & New Haven Stop", zh: "驱车北上 · 纽黑文小憩" },
       summary: {
-        en: "Leave Short Hills around 11am. Lunch and an easy stroll at Yale, then on to the hotel in Norwood — arriving comfortably before 5pm.",
-        zh: "上午11点左右从 Short Hills 出发。在耶鲁大学吃午餐、轻松散步，之后前往诺伍德（Norwood）的酒店，5点前从容抵达。",
+        en: "Leave Short Hills around 9:30am. Lunch and an easy stroll at Yale, then on to the hotel in Canton — arriving comfortably before 5pm.",
+        zh: "上午9:30左右从 Short Hills 出发。在耶鲁大学吃午餐、轻松散步，之后前往坎顿（Canton）的酒店，5点前从容抵达。",
       },
       transport: {
         en: "By car the whole day. About 1h20 to New Haven, then about 2h to the hotel.",
@@ -94,8 +94,8 @@ const TRIP = {
         zh: "花园、水景与历史。在公共花园乘坐天鹅船，可选鸭子船河上游览，并乘坐随上随下观光车游览自由之路。",
       },
       transport: {
-        en: "Two options (decide on the day): take the Norwood commuter rail into the city, or drive and park downtown. Both are described below.",
-        zh: "两种方案（当天再定）：乘坐诺伍德通勤火车进城，或自驾在市区停车。两者说明见下。",
+        en: "Two options (decide on the day): take the Canton commuter rail into the city, or drive and park downtown. Both are described below.",
+        zh: "两种方案（当天再定）：乘坐坎顿通勤火车进城，或自驾在市区停车。两者说明见下。",
       },
       sites: ["public-garden", "duck-tour", "freedom-trail", "north-end"],
     },
@@ -268,28 +268,28 @@ const TRIP = {
     },
     hotel: {
       emoji: "🏨",
-      name: { en: "Hampton Inn Boston-Norwood", zh: "波士顿诺伍德希尔顿欢朋酒店" },
-      area: { en: "Norwood, Massachusetts", zh: "马萨诸塞州 诺伍德" },
+      name: { en: "Hilton Garden Inn Boston Canton", zh: "波士顿坎顿希尔顿花园酒店" },
+      area: { en: "Canton, Massachusetts", zh: "马萨诸塞州 坎顿" },
       summary: {
         en: "Your home base for three nights, south of Boston.",
         zh: "三晚的落脚之处，位于波士顿南郊。",
       },
       intro: {
-        en: "A comfortable, easy hotel about 30 minutes south of downtown Boston. Free parking and breakfast make mornings simple.",
-        zh: "一家舒适便利的酒店，距波士顿市中心约30分钟车程。免费停车和早餐让早晨格外轻松。",
+        en: "A comfortable hotel in Canton, about 25 minutes south of downtown Boston.",
+        zh: "一家舒适的酒店，位于坎顿，距波士顿市中心约25分钟车程。",
       },
       story: {
-        en: "Norwood is a quiet suburb with easy highway access and its own commuter-rail station into Boston — a relaxed base away from city crowds.",
-        zh: "诺伍德是一个安静的郊区，高速公路出入方便，还设有通往波士顿的通勤火车站——是远离市区喧嚣的舒适落脚点。",
+        en: "Canton is a quiet suburb south of Boston with easy highway access and commuter-rail service into the city — a relaxed base away from city crowds.",
+        zh: "坎顿是波士顿南部的一个安静郊区，高速公路出入方便，还有通勤火车通往市区——是远离市区喧嚣的舒适落脚点。",
       },
       walk: { en: "None — park at the door.", zh: "无需步行——车停门口。" },
       hours: { en: "Check-in from 3pm; aim to arrive before 5pm.", zh: "下午3点起可入住；建议5点前抵达。" },
       tips: {
-        en: "Address: 434 Providence Hwy, Norwood, MA 02062. Note: the World Cup match at nearby Foxborough on Fri Jun 26 may bring extra traffic and crowds to this area in the afternoon/evening.",
-        zh: "地址：434 Providence Hwy, Norwood, MA 02062。注意：6月26日（周五）附近福克斯堡的世界杯比赛可能在下午/傍晚为本区带来额外车流和人群。",
+        en: "Address: 110 Royall St, Canton, MA 02021. Note: the World Cup match at nearby Foxborough on Fri Jun 26 may bring extra traffic and crowds to this area in the afternoon/evening.",
+        zh: "地址：110 Royall St, Canton, MA 02021。注意：6月26日（周五）附近福克斯堡的世界杯比赛可能在下午/傍晚为本区带来额外车流和人群。",
       },
-      coords: [42.1935, -71.1960],
-      mapQuery: "Hampton Inn Boston Norwood, 434 Providence Hwy Norwood MA",
+      coords: [42.1584, -71.1448],
+      mapQuery: "Hilton Garden Inn Boston Canton, 110 Royall St Canton MA",
       mustSee: [],
     },
 
@@ -862,18 +862,18 @@ const TRIP = {
       {
         title: { en: "🏨 Hotel", zh: "🏨 酒店" },
         body: {
-          en: "Hampton Inn Boston-Norwood, 434 Providence Hwy, Norwood, MA 02062. Free parking and breakfast. Check-in from 3pm.",
-          zh: "波士顿诺伍德希尔顿欢朋酒店，地址 434 Providence Hwy, Norwood, MA 02062。免费停车和早餐。下午3点起入住。",
+          en: "Hilton Garden Inn Boston Canton, 110 Royall St, Canton, MA 02021. Check-in from 3pm.",
+          zh: "波士顿坎顿希尔顿花园酒店，地址 110 Royall St, Canton, MA 02021。下午3点起入住。",
         },
-        mapQuery: "Hampton Inn Boston Norwood MA",
+        mapQuery: "Hilton Garden Inn Boston Canton, 110 Royall St Canton MA",
       },
       {
         title: { en: "🚆 Thursday Option A — Commuter Rail", zh: "🚆 周四方案A — 通勤火车" },
         body: {
-          en: "Take the MBTA Franklin/Foxboro Line from Norwood Central or Norwood Depot to Back Bay or South Station (~30 min). Buy tickets on the mTicket app or onboard. Go mid-morning and return at a relaxed pace.",
-          zh: "乘坐 MBTA 富兰克林/福克斯堡线，从 Norwood Central 或 Norwood Depot 到 Back Bay 或 South Station（约30分钟）。可用 mTicket 手机应用或在车上购票。建议上午晚些出发，回程从容安排即可。",
+          en: "Take the MBTA Providence/Stoughton Line from Canton Junction or Canton Center to South Station (~30–35 min). Buy tickets on the mTicket app or onboard. Go mid-morning and return at a relaxed pace.",
+          zh: "乘坐 MBTA 普罗维登斯/斯托顿线，从 Canton Junction 或 Canton Center 站到 South Station（约30–35分钟）。可用 mTicket 手机应用或在车上购票。建议上午晚些出发，回程从容安排即可。",
         },
-        mapQuery: "Norwood Central Station MBTA",
+        mapQuery: "Canton Junction Station MBTA",
       },
       {
         title: { en: "🅿️ Thursday Option B — Drive & Park", zh: "🅿️ 周四方案B — 自驾停车" },
@@ -886,8 +886,8 @@ const TRIP = {
       {
         title: { en: "⚽ World Cup Heads-up (Fri Jun 26)", zh: "⚽ 世界杯提醒（6月26日 周五）" },
         body: {
-          en: "Norway vs. France plays at 3pm at Gillette Stadium in Foxborough, ~12 miles south of the hotel. The Harvard & MIT campuses are north of the city and unaffected, but expect extra traffic and crowds near the hotel/highway from about 2–7:30pm — time your drive back from Cambridge to arrive before or after that window.",
-          zh: "挪威对法国的比赛于下午3点在福克斯堡的吉列体育场举行，距酒店以南约12英里。哈佛与麻省理工校区位于城北，不受影响，但约14:00–19:30酒店附近及高速可能有额外车流和人群——请把从剑桥返回的车程安排在这个时段之前或之后抵达。",
+          en: "Norway vs. France plays at 3pm at Gillette Stadium in Foxborough, ~15 miles south of the hotel. The Harvard & MIT campuses are north of the city and unaffected, but expect extra traffic and crowds near the hotel/highway from about 2–7:30pm — time your drive back from Cambridge to arrive before or after that window.",
+          zh: "挪威对法国的比赛于下午3点在福克斯堡的吉列体育场举行，距酒店以南约15英里。哈佛与麻省理工校区位于城北，不受影响，但约14:00–19:30酒店附近及高速可能有额外车流和人群——请把从剑桥返回的车程安排在这个时段之前或之后抵达。",
         },
         mapQuery: "",
       },
