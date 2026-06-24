@@ -90,12 +90,12 @@ const TRIP = {
       label: { en: "Thu · Jun 25", zh: "周四 · 6月25日" },
       title: { en: "Downtown Boston", zh: "波士顿市区" },
       summary: {
-        en: "Gardens, water and history. Start at the Public Garden for Swan Boats, then head to the Aquarium for the Duck Tour river cruise, and finish the afternoon with the Freedom Trail trolley east to Faneuil Hall and the North End.",
-        zh: "花园、水景与历史。先在公共花园乘坐天鹅船，再前往水族馆乘坐鸭子船游览，下午乘观光车沿自由之路向东到达法尼尔厅与北角。",
+        en: "Water, gardens and history. Start with the Duck Tour from the Aquarium, then walk to the Public Garden for Swan Boats, and finish the afternoon on the Freedom Trail trolley through downtown to the North End.",
+        zh: "水景、花园与历史。先在水族馆乘坐鸭子船游览，再步行前往公共花园乘天鹅船，最后乘观光车沿自由之路穿越市区，以北角收尾。",
       },
       transport: {
-        en: "Drive ~25 min downtown and park at Boston Common Garage (entrance on Charles St, under the Public Garden; ~$30 for 10 hours). Leave the car there all day — the whole route flows east from the garage: Public Garden → Duck Tour (Aquarium) → Freedom Trail trolley → North End.",
-        zh: "驱车约25分钟到市区，停在波士顿公园停车楼（入口在 Charles 街，位于公共花园下方；10小时约$30）。全天无需取车——路线从停车楼向东一路延伸：公共花园→鸭子船（水族馆）→自由之路观光车→北角。",
+        en: "Drive ~25 min downtown and park at Harbor Garage (200 Atlantic Ave, next to the Aquarium; ~$36 for the day). Leave the car there all day — route: Duck Tour (Aquarium) → walk west to Public Garden → Freedom Trail trolley east back through downtown → North End.",
+        zh: "驱车约25分钟到市区，停在 Harbor Garage（200 Atlantic Ave，紧邻水族馆；全天约$36）。全天无需取车——路线：鸭子船（水族馆）→向西步行至公共花园→乘自由之路观光车向东穿越市区→北角。",
       },
       sites: ["public-garden", "duck-tour", "freedom-trail", "north-end"],
     },
@@ -581,8 +581,8 @@ const TRIP = {
       walk: { en: "Zero walking — fully seated.", zh: "完全无需步行——全程坐着。" },
       hours: { en: "Departs hourly/half-hourly, 9am–dusk.", zh: "每小时或每半小时一班，9:00至黄昏。" },
       tips: {
-        en: "Best terminal for this day: New England Aquarium — about a 20-minute walk east from the Public Garden (or a quick rideshare). The tour returns you to the Aquarium, which is a 5-minute walk to Faneuil Hall where you pick up the Freedom Trail trolley, and steps from the North End. Three terminals total (Prudential Center, Museum of Science, Aquarium); book online to avoid sellouts. Wheelchair-accessible ducks available — call 617-450-0068 in advance.",
-        zh: "本次行程推荐出发点：新英格兰水族馆——从公共花园向东步行约20分钟，或乘车几分钟即到。行程结束后返回水族馆，步行5分钟即到法尼尔厅（自由之路观光车起点），北角也近在咫尺。共有三个出发点（保诚中心、科学博物馆、水族馆）；建议提前在网上购票以免售罄。无障碍轮椅鸭子船请提前致电 617-450-0068 安排。",
+        en: "Depart from the New England Aquarium terminal — park at Harbor Garage next door (200 Atlantic Ave). After the 80-min tour, walk west ~20 min to the Public Garden for Swan Boats, then pick up the Freedom Trail trolley from Boston Common. Three terminals total (Prudential Center, Museum of Science, Aquarium); book online to avoid sellouts. Wheelchair-accessible ducks available — call 617-450-0068 in advance.",
+        zh: "从新英格兰水族馆出发——可将车停在隔壁的 Harbor Garage（200 Atlantic Ave）。80分钟游览结束后，向西步行约20分钟前往公共花园乘坐天鹅船，再从波士顿公园搭乘自由之路观光车。共有三个出发点（保诚中心、科学博物馆、水族馆）；建议提前在网上购票以免售罄。无障碍轮椅鸭子船请提前致电 617-450-0068 安排。",
       },
       coords: [42.3473, -71.0821],
       mapQuery: "Boston Duck Tours New England Aquarium",
@@ -628,11 +628,10 @@ const TRIP = {
       mapQuery: "Faneuil Hall Quincy Market Boston",
       links: [
         { label: { en: "Official Freedom Trail map", zh: "自由之路官方地图" }, url: "https://www.thefreedomtrail.org/trail-map" },
-        { label: { en: "Parking: Boston Common Garage", zh: "停车：波士顿公园停车楼" }, url: "https://maps.apple.com/?q=Boston%20Common%20Garage&ll=42.3554,-71.0664" },
       ],
       tour: {
-        en: "Arrive by commuter rail (Back Bay or South Station) or drive and park at the Boston Common Garage. Start among the Swan Boats in the Public Garden, then follow the red line of the Freedom Trail east through Boston Common — past the gold-domed State House, Park Street Church, the Granary Burying Ground, and King's Chapel — to the Old State House, Faneuil Hall, and Quincy Market for lunch. From there the trail continues into the North End. To save your legs, hop the trolley between stops and step off only where you like; it loops you back.",
-        zh: "可乘通勤火车到 Back Bay 或 South Station，或自驾停在波士顿公园停车楼。先在公共花园的天鹅船边出发，再沿自由之路的红线向东穿过波士顿公园——经过金顶州议会大厦、公园街教堂、谷仓墓园和国王礼拜堂——到旧州议会厅、法尼尔厅，并在昆西市场吃午餐。由此自由之路继续通向北角。为了省力，可在各站之间乘坐随上随下观光车，想看哪站就在哪站下，它会载你绕回。",
+        en: "After the Swan Boats, walk to Boston Common and pick up the hop-on/hop-off trolley. Follow the Freedom Trail east — past the gold-domed State House, Park Street Church, the Granary Burying Ground, and King's Chapel — to the Old State House, Faneuil Hall, and Quincy Market for lunch. From there the trail continues into the North End. Hop the trolley between stops and step off only where you like; it loops you back.",
+        zh: "乘完天鹅船后，步行至波士顿公园搭乘随上随下观光车。沿自由之路向东——经过金顶州议会大厦、公园街教堂、谷仓墓园和国王礼拜堂——到旧州议会厅、法尼尔厅，并在昆西市场吃午餐。由此自由之路继续通向北角。在各站之间乘坐观光车，想看哪站就在哪站下，它会载你绕回。",
       },
       tourMapSvg: `<svg viewBox="0 0 360 470" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Downtown Boston Freedom Trail map" font-family="-apple-system,Helvetica,Arial,sans-serif">
   <rect x="0" y="0" width="360" height="470" fill="#f4f1ea"/>
@@ -870,10 +869,10 @@ const TRIP = {
       {
         title: { en: "🅿️ Thursday — Parking", zh: "🅿️ 周四 — 停车" },
         body: {
-          en: "Boston Common Garage, entrance on Charles St (under the Public Garden): ~$30 for 10 hours, $38 for 24 hours. Park once and leave the car all day — the day's route flows east from the garage to the North End.",
-          zh: "波士顿公园停车楼，入口在 Charles 街（位于公共花园下方）：10小时约$30，24小时约$38。停好车全天无需取车——当天路线从停车楼向东一路延伸至北角。",
+          en: "Harbor Garage, 200 Atlantic Ave (next to the Aquarium Duck Tour terminal): ~$36 for the day. Park once and leave the car all day.",
+          zh: "Harbor Garage，200 Atlantic Ave（紧邻水族馆鸭子船出发点）：全天约$36。停好车全天无需取车。",
         },
-        mapQuery: "Boston Common Garage Charles Street",
+        mapQuery: "Harbor Garage 200 Atlantic Ave Boston",
       },
       {
         title: { en: "⚽ World Cup Heads-up (Fri Jun 26)", zh: "⚽ 世界杯提醒（6月26日 周五）" },
