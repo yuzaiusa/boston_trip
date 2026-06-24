@@ -90,12 +90,12 @@ const TRIP = {
       label: { en: "Thu · Jun 25", zh: "周四 · 6月25日" },
       title: { en: "Downtown Boston", zh: "波士顿市区" },
       summary: {
-        en: "Gardens, water and history. Swan Boats in the Public Garden, an optional Duck Tour river cruise, and the Freedom Trail by hop-on/hop-off trolley.",
-        zh: "花园、水景与历史。在公共花园乘坐天鹅船，可选鸭子船河上游览，并乘坐随上随下观光车游览自由之路。",
+        en: "Gardens, history and water. Start at the Public Garden for Swan Boats, ride the Freedom Trail trolley east to Faneuil Hall for lunch, then finish with the Duck Tour departing from the Aquarium — a short stroll from Faneuil Hall and steps from the North End.",
+        zh: "花园、历史与水景。先在公共花园乘坐天鹅船，再乘观光车沿自由之路向东到法尼尔厅吃午餐，最后在水族馆乘坐鸭子船——离法尼尔厅步行仅几分钟，也与北角紧邻。",
       },
       transport: {
-        en: "Two options (decide on the day): take the Canton commuter rail into the city, or drive and park downtown. Both are described below.",
-        zh: "两种方案（当天再定）：乘坐坎顿通勤火车进城，或自驾在市区停车。两者说明见下。",
+        en: "Drive ~25 min downtown and park at Boston Common Garage (entrance on Charles St, under the Public Garden; ~$30 for 10 hours). Leave the car there all day — the whole route flows east from the garage: Public Garden → Freedom Trail trolley → Duck Tour (Aquarium) → North End.",
+        zh: "驱车约25分钟到市区，停在波士顿公园停车楼（入口在 Charles 街，位于公共花园下方；10小时约$30）。全天无需取车——路线从停车楼向东一路延伸：公共花园→自由之路观光车→鸭子船（水族馆）→北角。",
       },
       sites: ["public-garden", "duck-tour", "freedom-trail", "north-end"],
     },
@@ -581,11 +581,11 @@ const TRIP = {
       walk: { en: "Zero walking — fully seated.", zh: "完全无需步行——全程坐着。" },
       hours: { en: "Departs hourly/half-hourly, 9am–dusk.", zh: "每小时或每半小时一班，9:00至黄昏。" },
       tips: {
-        en: "Departs from the Prudential Center, Museum of Science, or the Aquarium. Wheelchair-accessible ducks are available — call 617-450-0068 in advance to arrange. Complements the trolley; you can do both.",
-        zh: "从保诚中心、科学博物馆或水族馆出发。提供无障碍轮椅鸭子船——请提前致电 617-450-0068 安排。与观光车互补，二者可兼得。",
+        en: "Best terminal for this day: New England Aquarium — a 5-minute walk from Faneuil Hall, fits naturally after Freedom Trail lunch, and the tour returns you right next to the North End. Three terminals total (Prudential Center, Museum of Science, Aquarium); book online to avoid sellouts. Wheelchair-accessible ducks available — call 617-450-0068 in advance.",
+        zh: "本次行程推荐出发点：新英格兰水族馆——距法尼尔厅步行仅5分钟，接在自由之路午餐后最顺畅，结束后也恰好在北角附近。共有三个出发点（保诚中心、科学博物馆、水族馆）；建议提前在网上购票以免售罄。无障碍轮椅鸭子船请提前致电 617-450-0068 安排。",
       },
       coords: [42.3473, -71.0821],
-      mapQuery: "Boston Duck Tours Prudential Center",
+      mapQuery: "Boston Duck Tours New England Aquarium",
       links: [
         { label: { en: "Tickets, times & departure points", zh: "购票、班次与出发点" }, url: "https://bostonducktours.com/" },
       ],
@@ -868,18 +868,10 @@ const TRIP = {
         mapQuery: "Hilton Garden Inn Boston Canton, 110 Royall St Canton MA",
       },
       {
-        title: { en: "🚆 Thursday Option A — Commuter Rail", zh: "🚆 周四方案A — 通勤火车" },
+        title: { en: "🅿️ Thursday — Parking", zh: "🅿️ 周四 — 停车" },
         body: {
-          en: "Take the MBTA Providence/Stoughton Line from Canton Junction or Canton Center to South Station (~30–35 min). Buy tickets on the mTicket app or onboard. Go mid-morning and return at a relaxed pace.",
-          zh: "乘坐 MBTA 普罗维登斯/斯托顿线，从 Canton Junction 或 Canton Center 站到 South Station（约30–35分钟）。可用 mTicket 手机应用或在车上购票。建议上午晚些出发，回程从容安排即可。",
-        },
-        mapQuery: "Canton Junction Station MBTA",
-      },
-      {
-        title: { en: "🅿️ Thursday Option B — Drive & Park", zh: "🅿️ 周四方案B — 自驾停车" },
-        body: {
-          en: "Drive ~25–30 min downtown and park at Boston Common Garage (entrance on Charles St, under the Public Garden): about $30 up to 10 hours, $38 for 24 hours. Most central for starting at the Swan Boats.",
-          zh: "驱车约25–30分钟到市区，在波士顿公园停车楼停车（入口在 Charles 街，位于公共花园下方）：10小时内约$30，24小时约$38。从天鹅船开始游览最为便利。",
+          en: "Boston Common Garage, entrance on Charles St (under the Public Garden): ~$30 for 10 hours, $38 for 24 hours. Park once and leave the car all day — the day's route flows east from the garage to the North End.",
+          zh: "波士顿公园停车楼，入口在 Charles 街（位于公共花园下方）：10小时约$30，24小时约$38。停好车全天无需取车——当天路线从停车楼向东一路延伸至北角。",
         },
         mapQuery: "Boston Common Garage Charles Street",
       },
