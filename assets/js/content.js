@@ -90,14 +90,14 @@ const TRIP = {
       label: { en: "Thu · Jun 25", zh: "周四 · 6月25日" },
       title: { en: "Downtown Boston", zh: "波士顿市区" },
       summary: {
-        en: "Water, gardens and history. Start with the Duck Tour from the Aquarium, then walk to the Public Garden for Swan Boats, and finish the afternoon on the Freedom Trail trolley through downtown to the North End.",
-        zh: "水景、花园与历史。先在水族馆乘坐鸭子船游览，再步行前往公共花园乘天鹅船，最后乘观光车沿自由之路穿越市区，以北角收尾。",
+        en: "Water, history and gardens. Duck Tour from the Aquarium, then lunch at the harbor, a short walk to Quincy Market, trolley out to the Public Garden for Swan Boats, and trolley back for the North End.",
+        zh: "水景、历史与花园。在水族馆乘坐鸭子船，港口午餐，步行至昆西市场，乘观光车前往公共花园乘天鹅船，再乘车返回，以北角收尾。",
       },
       transport: {
-        en: "Drive ~25 min downtown and park at Harbor Garage (200 Atlantic Ave, next to the Aquarium; ~$36 for the day). Leave the car there all day — route: Duck Tour (Aquarium) → walk west to Public Garden → Freedom Trail trolley east back through downtown → North End.",
-        zh: "驱车约25分钟到市区，停在 Harbor Garage（200 Atlantic Ave，紧邻水族馆；全天约$36）。全天无需取车——路线：鸭子船（水族馆）→向西步行至公共花园→乘自由之路观光车向东穿越市区→北角。",
+        en: "Drive ~25 min downtown and park at Harbor Garage (200 Atlantic Ave, next to the Aquarium; ~$36 for the day). Leave the car there all day — route: Duck Tour → lunch at the harbor → walk 5 min to Quincy Market → trolley to Public Garden (Swan Boats) → trolley back → North End → walk back to the garage.",
+        zh: "驱车约25分钟到市区，停在 Harbor Garage（200 Atlantic Ave，紧邻水族馆；全天约$36）。全天无需取车——路线：鸭子船→港口午餐→步行5分钟至昆西市场→乘观光车前往公共花园（天鹅船）→乘车返回→北角→步行回停车楼。",
       },
-      sites: ["public-garden", "duck-tour", "freedom-trail", "north-end"],
+      sites: ["duck-tour", "freedom-trail", "public-garden", "north-end"],
     },
     {
       id: "fri",
@@ -537,8 +537,8 @@ const TRIP = {
       walk: { en: "Very gentle; flat paths & lots of benches.", zh: "非常轻松；小径平坦，长椅众多。" },
       hours: { en: "Swan Boats daily 10am–5pm (late June).", zh: "天鹅船每日10:00–17:00（六月下旬）。" },
       tips: {
-        en: "Swan Boat tickets (~$4.25 seniors) are bought at the dock — no reservation needed. Staff can help with boarding. Boats don't run in rain or high wind.",
-        zh: "天鹅船船票（长者约$4.25）在码头现场购买，无需预订。工作人员可协助上船。雨天或大风时不开船。",
+        en: "Arrive by trolley from Quincy Market. Swan Boat tickets (~$4.25 seniors) are bought at the dock — no reservation needed. Staff can help with boarding. Boats don't run in rain or high wind.",
+        zh: "从昆西市场乘观光车前来。天鹅船船票（长者约$4.25）在码头现场购买，无需预订。工作人员可协助上船。雨天或大风时不开船。",
       },
       coords: [42.3541, -71.0699],
       mapQuery: "Swan Boats Boston Public Garden",
@@ -581,8 +581,8 @@ const TRIP = {
       walk: { en: "Zero walking — fully seated.", zh: "完全无需步行——全程坐着。" },
       hours: { en: "Departs hourly/half-hourly, 9am–dusk.", zh: "每小时或每半小时一班，9:00至黄昏。" },
       tips: {
-        en: "Depart from the New England Aquarium terminal — park at Harbor Garage next door (200 Atlantic Ave). After the 80-min tour, walk west ~20 min to the Public Garden for Swan Boats, then pick up the Freedom Trail trolley from Boston Common. Three terminals total (Prudential Center, Museum of Science, Aquarium); book online to avoid sellouts. Wheelchair-accessible ducks available — call 617-450-0068 in advance.",
-        zh: "从新英格兰水族馆出发——可将车停在隔壁的 Harbor Garage（200 Atlantic Ave）。80分钟游览结束后，向西步行约20分钟前往公共花园乘坐天鹅船，再从波士顿公园搭乘自由之路观光车。共有三个出发点（保诚中心、科学博物馆、水族馆）；建议提前在网上购票以免售罄。无障碍轮椅鸭子船请提前致电 617-450-0068 安排。",
+        en: "Depart from the New England Aquarium terminal — park at Harbor Garage next door (200 Atlantic Ave). After the 80-min tour it will be around lunchtime; the harbor waterfront has plenty of casual seafood spots. Then walk 5 min to Quincy Market and pick up the trolley. Three terminals total (Prudential Center, Museum of Science, Aquarium); book online to avoid sellouts. Wheelchair-accessible ducks available — call 617-450-0068 in advance.",
+        zh: "从新英格兰水族馆出发——可将车停在隔壁的 Harbor Garage（200 Atlantic Ave）。80分钟游览结束后恰好到午餐时间；港口一带有不少休闲海鲜餐厅。之后步行5分钟至昆西市场搭乘观光车。共有三个出发点（保诚中心、科学博物馆、水族馆）；建议提前在网上购票以免售罄。无障碍轮椅鸭子船请提前致电 617-450-0068 安排。",
       },
       coords: [42.3473, -71.0821],
       mapQuery: "Boston Duck Tours New England Aquarium",
@@ -630,8 +630,8 @@ const TRIP = {
         { label: { en: "Official Freedom Trail map", zh: "自由之路官方地图" }, url: "https://www.thefreedomtrail.org/trail-map" },
       ],
       tour: {
-        en: "After the Swan Boats, walk to Boston Common and pick up the hop-on/hop-off trolley. Follow the Freedom Trail east — past the gold-domed State House, Park Street Church, the Granary Burying Ground, and King's Chapel — to the Old State House, Faneuil Hall, and Quincy Market for lunch. From there the trail continues into the North End. Hop the trolley between stops and step off only where you like; it loops you back.",
-        zh: "乘完天鹅船后，步行至波士顿公园搭乘随上随下观光车。沿自由之路向东——经过金顶州议会大厦、公园街教堂、谷仓墓园和国王礼拜堂——到旧州议会厅、法尼尔厅，并在昆西市场吃午餐。由此自由之路继续通向北角。在各站之间乘坐观光车，想看哪站就在哪站下，它会载你绕回。",
+        en: "After lunch at the harbor, walk 5 min to Quincy Market and board the hop-on/hop-off trolley westbound to the Public Garden for Swan Boats. Then take the trolley back east — hop off at the State House, Faneuil Hall, or any stop you like along the way. The North End is a short walk from Faneuil Hall when you return.",
+        zh: "在港口午餐后，步行5分钟至昆西市场，搭乘随上随下观光车向西前往公共花园乘坐天鹅船。之后乘观光车向东返回——可在州议会大厦、法尼尔厅或任何感兴趣的站点下车。返回后步行即可到达北角。",
       },
       tourMapSvg: `<svg viewBox="0 0 360 470" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Downtown Boston Freedom Trail map" font-family="-apple-system,Helvetica,Arial,sans-serif">
   <rect x="0" y="0" width="360" height="470" fill="#f4f1ea"/>
