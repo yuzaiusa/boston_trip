@@ -90,12 +90,12 @@ const TRIP = {
       label: { en: "Thu · Jun 25", zh: "周四 · 6月25日" },
       title: { en: "Downtown Boston", zh: "波士顿市区" },
       summary: {
-        en: "Gardens, history and water. Start at the Public Garden for Swan Boats, ride the Freedom Trail trolley east to Faneuil Hall for lunch, then finish with the Duck Tour departing from the Aquarium — a short stroll from Faneuil Hall and steps from the North End.",
-        zh: "花园、历史与水景。先在公共花园乘坐天鹅船，再乘观光车沿自由之路向东到法尼尔厅吃午餐，最后在水族馆乘坐鸭子船——离法尼尔厅步行仅几分钟，也与北角紧邻。",
+        en: "Gardens, water and history. Start at the Public Garden for Swan Boats, then head to the Aquarium for the Duck Tour river cruise, and finish the afternoon with the Freedom Trail trolley east to Faneuil Hall and the North End.",
+        zh: "花园、水景与历史。先在公共花园乘坐天鹅船，再前往水族馆乘坐鸭子船游览，下午乘观光车沿自由之路向东到达法尼尔厅与北角。",
       },
       transport: {
-        en: "Drive ~25 min downtown and park at Boston Common Garage (entrance on Charles St, under the Public Garden; ~$30 for 10 hours). Leave the car there all day — the whole route flows east from the garage: Public Garden → Freedom Trail trolley → Duck Tour (Aquarium) → North End.",
-        zh: "驱车约25分钟到市区，停在波士顿公园停车楼（入口在 Charles 街，位于公共花园下方；10小时约$30）。全天无需取车——路线从停车楼向东一路延伸：公共花园→自由之路观光车→鸭子船（水族馆）→北角。",
+        en: "Drive ~25 min downtown and park at Boston Common Garage (entrance on Charles St, under the Public Garden; ~$30 for 10 hours). Leave the car there all day — the whole route flows east from the garage: Public Garden → Duck Tour (Aquarium) → Freedom Trail trolley → North End.",
+        zh: "驱车约25分钟到市区，停在波士顿公园停车楼（入口在 Charles 街，位于公共花园下方；10小时约$30）。全天无需取车——路线从停车楼向东一路延伸：公共花园→鸭子船（水族馆）→自由之路观光车→北角。",
       },
       sites: ["public-garden", "duck-tour", "freedom-trail", "north-end"],
     },
@@ -581,8 +581,8 @@ const TRIP = {
       walk: { en: "Zero walking — fully seated.", zh: "完全无需步行——全程坐着。" },
       hours: { en: "Departs hourly/half-hourly, 9am–dusk.", zh: "每小时或每半小时一班，9:00至黄昏。" },
       tips: {
-        en: "Best terminal for this day: New England Aquarium — a 5-minute walk from Faneuil Hall, fits naturally after Freedom Trail lunch, and the tour returns you right next to the North End. Three terminals total (Prudential Center, Museum of Science, Aquarium); book online to avoid sellouts. Wheelchair-accessible ducks available — call 617-450-0068 in advance.",
-        zh: "本次行程推荐出发点：新英格兰水族馆——距法尼尔厅步行仅5分钟，接在自由之路午餐后最顺畅，结束后也恰好在北角附近。共有三个出发点（保诚中心、科学博物馆、水族馆）；建议提前在网上购票以免售罄。无障碍轮椅鸭子船请提前致电 617-450-0068 安排。",
+        en: "Best terminal for this day: New England Aquarium — about a 20-minute walk east from the Public Garden (or a quick rideshare). The tour returns you to the Aquarium, which is a 5-minute walk to Faneuil Hall where you pick up the Freedom Trail trolley, and steps from the North End. Three terminals total (Prudential Center, Museum of Science, Aquarium); book online to avoid sellouts. Wheelchair-accessible ducks available — call 617-450-0068 in advance.",
+        zh: "本次行程推荐出发点：新英格兰水族馆——从公共花园向东步行约20分钟，或乘车几分钟即到。行程结束后返回水族馆，步行5分钟即到法尼尔厅（自由之路观光车起点），北角也近在咫尺。共有三个出发点（保诚中心、科学博物馆、水族馆）；建议提前在网上购票以免售罄。无障碍轮椅鸭子船请提前致电 617-450-0068 安排。",
       },
       coords: [42.3473, -71.0821],
       mapQuery: "Boston Duck Tours New England Aquarium",
