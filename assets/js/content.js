@@ -772,13 +772,15 @@ const TRIP = {
       walk: { en: "A few flat, easy blocks.", zh: "几个平坦好走的街区。" },
       hours: { en: "Restaurants open late morning onward.", zh: "餐馆从上午晚些时候起营业。" },
       tips: {
-        en: "Arrive early (~11:30am) to beat the lunch crowd before the long drive. Park in a garage near the Chinatown Gate / Tufts Medical area. Great for dim sum or a sit-down lunch.",
-        zh: "建议早些到（约上午11:30），在长途驾驶前避开午餐人潮。可在唐人街牌楼／塔夫茨医疗中心附近的停车楼停车。很适合吃点心或坐下来好好吃顿午餐。",
+        en: "Arrive early (~11:30am) to beat the lunch crowd before the long drive. For dim sum, choose between Hei La Moon (88 Beach St) or Fuchun Ju — both are right in Chinatown. Map links are in the links section below.",
+        zh: "建议早些到（约上午11:30），在长途驾驶前避开午餐人潮。点心可在喜 La Moon（88 Beach St）或富春居中选择，两家都在唐人街内。地图链接见下方。",
       },
       coords: [42.3515, -71.0621],
       mapQuery: "Chinatown Gate Boston",
       links: [
         { label: { en: "Parking: 40 Beach St Garage", zh: "停车：40 Beach St 停车楼" }, url: "https://maps.apple.com/?q=40%20Beach%20Street%20Garage%20Boston&ll=42.3517,-71.0612" },
+        { label: { en: "Hei La Moon (dim sum)", zh: "喜 La Moon（点心）" }, url: "https://maps.apple.com/?q=Hei+La+Moon&ll=42.3516,-71.0609" },
+        { label: { en: "Fuchun Ju (dim sum)", zh: "富春居（点心）" }, url: "https://maps.apple.com/?q=Fuchun+Ju+Boston" },
         { label: { en: "Chinatown Park (Greenway)", zh: "唐人街公园（绿道）" }, url: "https://www.rosekennedygreenway.org/parks/chinatown-park" },
       ],
       tour: {
@@ -842,8 +844,8 @@ const TRIP = {
           caption: { en: "3. Lantern-lined streets", zh: "3. 挂满灯笼的街道" },
           desc: { en: "Beach Street and Tyler Street form the lively heart of Chinatown — red lanterns, bilingual signs, herbal shops, and bustling restaurants.", zh: "Beach 街与 Tyler 街是唐人街热闹的核心——红灯笼、双语招牌、中药铺和熙攘的餐馆。" } },
         { emoji: "🥟", img: "chinatown-dimsum.jpg",
-          caption: { en: "4. Dim sum or a sit-down lunch", zh: "4. 点心或坐下来用午餐" },
-          desc: { en: "The reason for the stop: roast meats, fresh seafood, and carts of dim sum. Arrive around 11:30am to beat the crowd before the long drive.", zh: "此行的重头戏：烧腊、新鲜海鲜和一笼笼的点心。建议约上午11:30到，在长途驾驶前避开人潮。" } },
+          caption: { en: "4. Dim sum lunch", zh: "4. 点心午餐" },
+          desc: { en: "Two good choices: Hei La Moon (88 Beach St) for classic cart-style dim sum, or Fuchun Ju for a quieter sit-down option. Arrive around 11:30am to beat the crowd before the long drive.", zh: "两个好选择：喜 La Moon（88 Beach St）供应经典推车点心，富春居则更安静适合坐下来用餐。建议约上午11:30到，在长途驾驶前避开人潮。" } },
         { emoji: "🥮", img: "chinatown-bakery.jpg",
           caption: { en: "5. Chinese bakery for the road", zh: "5. 带上路的中式糕点" },
           desc: { en: "Before heading back to the car, pick up egg tarts, mooncakes, or buns from a Chinese bakery to enjoy on the drive home.", zh: "回到车上之前，到中式糕点店买些蛋挞、月饼或包点，留在返程路上享用。" } },
